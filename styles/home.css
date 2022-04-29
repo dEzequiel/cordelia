@@ -1,0 +1,148 @@
+body {
+    background-color: white;
+}
+
+header {
+    width: 1301px;
+    height: 84px;
+    display: table;
+    background-color: antiquewhite;
+}
+
+header img {
+    width: 447px;
+    height: 80px;
+}
+
+#me {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+#me img {
+    width: 75px;
+    height: 75px;
+}
+
+#me img:nth-child(3) {
+    width: 31px;
+    height: 31px;
+    margin-left: 86px;
+    margin-right: 86px;
+}
+
+#me img:nth-child(4) {
+    width: 5px;
+    height: 19px;
+}
+
+#me p {
+width: 135px;
+height: 15px;
+color: #000000;
+font-family: 'Nunito', sans-serif;
+font-size: 15px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 15.01px;
+text-align: center;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+#clickables {
+    display: flex;
+    float: right;
+    align-items: center;
+    text-align: center;
+}
+
+#clickables img {
+    width: 31px;
+    height: 31px;
+}
+
+#clickables img:only-child {
+    width: 5px;
+    height: 19px;
+}
+
+
+#clickables figcaption {
+    width: 74px;
+    height: 12px;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 15.01px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "S, ETTINGS" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+
+
+/* .container {
+    display: flex;
+}
+
+
+.container div {
+    width: 293px;
+    height: 145px;
+    border: 1px solid #cccfd6;
+    border: 1px solid #ffffff;
+    background-color: red;
+    margin-right: 10px;
+    margin-top: 20px;
+
+} */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.flex-item  {
+
+    width: 293px;
+    height: 145px;
+    border: 1px solid #cccfd6;
+    border: 1px solid #ffffff;
+    background-color: red;
+    margin-right: 10px;
+    margin-top: 20px;
+    list-style: none;
+
+
+}
+/*
+div > p {
+    width: 140px;
+    height: 43px;
+    color: #868686;
+    font-family: "Arial - Bold MT";
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 15.01px;
+    text-align: right;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+} */
