@@ -2,25 +2,84 @@ body {
     background-color: white;
 }
 
-header {
-    width: 1301px;
-    height: 84px;
-    display: table;
-    background-color: antiquewhite;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-header img {
+#logo {
     width: 447px;
     height: 80px;
+    float:right;
+    margin-right: auto;
 }
 
-#me {
-    display: flex;
+.item {
+    background-color: aliceblue;
+    text-align: center;
+    margin: 0 20px;
+    align-self: fle;
+}
+
+.item span {
+    display: block;
+}
+
+#profile-pic {
+    width: 75px;
+    height: 75px;
+}
+
+.container-main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 110px;
+    row-gap: 20px;
+}
+
+
+.main-item {
+    width: 293px;
+    height: 145px;
+    background-color: gold;
+}
+
+/* #user {
+    background-color: aqua;
+}
+
+#user-name {
+
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 15.01px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.options {
+    background-color: aqua;
+    text-align: center;
+} */
+
+/* figure {
+    text-align: center;
     float: right;
-    align-items: center;
-}
+    align-items: end;
+    display: ;
+} */
 
-#me img {
+
+
+
+/* #me img {
     width: 75px;
     height: 75px;
 }
@@ -38,19 +97,7 @@ header img {
 }
 
 #me p {
-width: 135px;
-height: 15px;
-color: #000000;
-font-family: 'Nunito', sans-serif;
-font-size: 15px;
-font-weight: 400;
-font-style: normal;
-letter-spacing: normal;
-line-height: 15.01px;
-text-align: center;
-font-style: normal;
-letter-spacing: normal;
-line-height: normal;
+
 }
 
 #clickables {
@@ -84,10 +131,10 @@ line-height: normal;
     text-align: center;
     text-transform: uppercase;
     /* Text style for "S, ETTINGS" */
-    font-style: normal;
+    /* font-style: normal;
     letter-spacing: normal;
-    line-height: normal;
-}
+    line-height: normal; */
+
 
 
 
@@ -107,7 +154,7 @@ line-height: normal;
 
 } */
 
-.flex-container {
+/* .flex-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -128,7 +175,7 @@ line-height: normal;
     list-style: none;
 
 
-}
+} */
 /*
 div > p {
     width: 140px;
@@ -145,4 +192,5 @@ div > p {
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-} */
+}
+*/
