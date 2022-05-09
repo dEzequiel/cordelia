@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+#header-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -16,45 +16,43 @@ body {
     margin-right: auto;
 }
 
-.item {
-    background-color: aliceblue;
-    text-align: center;
-    margin: 0 20px;
-}
-
-.item span {
-    display: block;
-}
-
 #profile-pic {
     width: 75px;
     height: 75px;
 }
 
-.grid-container-main {
-    display: grid;
-    gap: 10px 20px;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    gap: 20px;
+.header-item {
+    background-color: aliceblue;
+    text-align: center;
+    margin: 0 20px;
 }
 
-.flex-container-main {
+.header-item span {
+    display: block;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+}
+
+.main-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-
+    row-gap: 20px;
+    justify-content: flex-start;
+    column-gap: 10px;
+    padding-bottom: 10px;
 }
 
-.flex-container-item {
+.main-item {
     width: 293px;
     height: 145px;
     background-color: #f4f5f7;
-    border-color: #000000;
+    row-gap: 20px;
 }
 
-.flex-container-item img {
+.main-item img {
     display: block;
 }
 
@@ -63,203 +61,54 @@ body {
     height: 113px;
 }
 
-.flex-container-item img:nth-child(1){
+.main-item img:nth-child(1){
     margin-top: 5px;
     margin-left: 5px;
 }
 
-.flex-container-item img:nth-child(3) {
+.main-item img:nth-child(3) {
     float: right;
     position: relative;
     bottom: 5px;
 }
 
-.flex-container-item span {
+.main-item span {
     position: relative;
     display: block;
     left: 130px;
     bottom: 50px;
     width: 150px;
     font-size: 20px;
-
 }
 
-/* .flex-container-item {
-    background-color: gold;
-    width: 293px;
-    height: 145px;
+@media screen and (min-width:320px) and (max-width: 1024px) {
 
-} */
+    #header-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #logo {
+        margin: auto;
+        width: 350px;
+    }
 
-/* .flex-container-main span {
+    main {
+        width: 100%;
+    }
 
-    font-family: Arial;
-    font-size: 22px;
-    font-weight: bold;
-    background-color: aqua;
-    float: right;
-    width: 150px;
-    margin-top: 80px;
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.flex-container-item {
-    width: 293px;
-    height: 145px;
+@media screen and (min-width: 810px) and (max-width: 1280px) {
+    #header-container {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
 }
-
-.flex-container-item img {
-    position: relative;
-    left: 277px;
-    top: 128px;
-} */
-
-/* #user {
-    background-color: aqua;
-}
-
-#user-name {
-
-    color: #000000;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 15.01px;
-    text-align: center;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-}
-
-.options {
-    background-color: aqua;
-    text-align: center;
-} */
-
-/* figure {
-    text-align: center;
-    float: right;
-    align-items: end;
-    display: ;
-} */
-
-
-
-
-/* #me img {
-    width: 75px;
-    height: 75px;
-}
-
-#me img:nth-child(3) {
-    width: 31px;
-    height: 31px;
-    margin-left: 86px;
-    margin-right: 86px;
-}
-
-#me img:nth-child(4) {
-    width: 5px;
-    height: 19px;
-}
-
-#me p {
-
-}
-
-#clickables {
-    display: flex;
-    float: right;
-    align-items: center;
-    text-align: center;
-}
-
-#clickables img {
-    width: 31px;
-    height: 31px;
-}
-
-#clickables img:only-child {
-    width: 5px;
-    height: 19px;
-}
-
-
-#clickables figcaption {
-    width: 74px;
-    height: 12px;
-    color: #000000;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 15.01px;
-    text-align: center;
-    text-transform: uppercase;
-    /* Text style for "S, ETTINGS" */
-    /* font-style: normal;
-    letter-spacing: normal;
-    line-height: normal; */
-
-
-
-
-/* .container {
-    display: flex;
-}
-
-
-.container div {
-    width: 293px;
-    height: 145px;
-    border: 1px solid #cccfd6;
-    border: 1px solid #ffffff;
-    background-color: red;
-    margin-right: 10px;
-    margin-top: 20px;
-
-} */
-
-/* .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-.flex-item  {
-
-    width: 293px;
-    height: 145px;
-    border: 1px solid #cccfd6;
-    border: 1px solid #ffffff;
-    background-color: red;
-    margin-right: 10px;
-    margin-top: 20px;
-    list-style: none;
-
-
-} */
-/*
-div > p {
-    width: 140px;
-    height: 43px;
-    color: #868686;
-    font-family: "Arial - Bold MT";
-    font-size: 22px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 15.01px;
-    text-align: right;
-    text-transform: uppercase;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-}
-*/
