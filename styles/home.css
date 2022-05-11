@@ -165,7 +165,7 @@ hr {
     margin-top: 11px;
     float: right;
     align-self: baseline;
-
+    margin-right: 30px;
 }
 
 #alerts-messaging-search {
@@ -265,6 +265,7 @@ hr {
     font-size: 0.8em;
 }
 
+
 #messages-remaining {
     display: flex;
     float: right;
@@ -278,6 +279,170 @@ hr {
 #messages-remaining span {
     color: #949899;
 }
+
+.calendar-container {
+    display: flex;
+}
+
+.calendar-left-container {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-left-container .actual-date {
+
+}
+
+.reminder-contact {
+    height: 60px;
+    width: 400px;
+    background-color: #ff503d;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.reminder-contact span {
+    color: white;
+    font-size: 1.2em;
+}
+
+.reminder-contact span:nth-child(4) {
+    font-size: 0.9em;
+    margin-left: 35px
+}
+
+.reminder-contact img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: inline;
+}
+
+.reminder-descript {
+    height: 60px;
+    width: 400px;
+    background-color: #ff503d;
+    justify-content: center;
+}
+
+.reminder-descript span {
+    color: white;
+    font-size: 1.2em;
+}
+
+.reminder-descript span:nth-child(5) {
+    font-size: 0.9em;
+    margin-left: 35px
+}
+
+.reminder-descript img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: inline;
+}
+
+.reminder-descript-specific {
+    background-color: #e3e3e3;
+    width: 400px;
+
+}
+
+.reminder-descript-specific p {
+    margin-left: auto;
+    margin-right: auto;
+    width:350px;
+}
+
+
+.reminder-descript-specific span:nth-child(1) {
+    margin-left: 25px;
+}
+.reminder-descript-specific span:nth-child(2) {
+    font-size: 1.2em;
+}
+
+.reminder-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.reminder-buttons button:nth-child(1) {
+    background-color: #00dabf;
+    height: 30px;
+    width: 70px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    text-align: center;
+    font-size: 0.8em;
+    color: #009e90;
+    margin-right: 40px;
+}
+
+.reminder-buttons button:nth-child(2) {
+    background-color: #ff503d;
+    height: 30px;
+    width: 70px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.actual-date {
+    font-size: 2em;
+}
+
+.close {
+    background-color: #82281f;
+    height: 20px;
+    width: 20px;
+    color: white;
+    text-align: center;
+    float: right;
+}
+
+.calendar-right-container {
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+}
+
+.months {
+    background-color: #009e90;
+    width: 400px;
+}
+
+.weekdays li{
+    display: inline;
+    margin-right: 30px;
+    gap: 50px;
+}
+/* .calendar-left-item {
+    border: 1px solid #e8e8e8;
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width:320px) and (max-width: 1024px) {
 
