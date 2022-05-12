@@ -388,15 +388,13 @@ main {
 
 /* ////////////////////////////////////////////////////////////////// */
 
-#circle-buttons-container {
-    display: flex;
+.circle-buttons-container {
     width: 1000px;
-    margin: 0;
-    justify-content: center;
-    
+    margin: auto;
+    display: flex;
 }
 
-#circle-buttons-container button {
+.circle-buttons-container button {
     height:50px;
     cursor:pointer;
     text-align: center;
@@ -404,6 +402,69 @@ main {
     outline: none;
     background-color: rgb(255, 249, 249);
     font-size: 1em;
+    width: 50%;
+}
+/* ////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////// */
+.circle-care {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    background-color: #e3e3e3;
+    flex-direction: column;
+}
+
+.drag {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.drag span {
+    background-color: #e4e2e3;
+    width: 300px;
+    text-align: center;
+}
+/* //////////////////////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.person-card {
+    width: 400px;
+    height: 180px;
+    margin: auto;
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid gray;
+
+}
+
+.person-card h4 {
+    background-color: #009e90;
+    height: 20px;
+    width: 100%;
+    font-size: 1.3em;
+    
+}
+
+.send-button {
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    margin-top: auto;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    background-color: #ff503d;
+    color: white;
+    font-size: 1em;
+}
+
+.card-decoration {
+    background-color: #ff503d;
+    height: 180px;
+    width: 12px;
 }
 
 /* //////////////////////////////////////////////////////////////////// */
