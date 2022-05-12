@@ -84,10 +84,7 @@ main {
 
 .divider {
     display: flex;
-    background-color:#dfe0e5;
-    width: 100%;
-    height: 30px;
-    font-size: x-large;
+
 }
 
 .divider img {
@@ -106,6 +103,320 @@ main {
 
 }
 
+/* /////////////////////////////////////////////////////////// */
+#alerts-messaging-container-buttons {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    border: 1px solid rgb(204, 203, 203);
+
+}
+
+#alerts-messaging-container-buttons button {
+    height:50px;
+    cursor:pointer;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 1em;
+}
+
+#alerts-messaging-container-buttons button:nth-child(2) {
+    color: white;
+    background-color: #ff503d;
+    margin-left: 30px;
+}
+
+
+.check-all {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline;
+    border-radius: 5%;
+    /* border: 1px solid #ff503d; */
+}
+
+#search-bar {
+    align-self: center;
+    margin-left: auto;
+    height: 23px;
+
+}
+/* //////////////////////////////////////////////////////////// */
+
+
+
+/* //////////////////////////////////////////////////////// */
+.alerts-messaging-container-person {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-content: flex-end;
+    gap: 30px;
+    border: 1px solid rgb(204, 203, 203);
+
+}
+
+.alerts-messaging-container-person span {
+    align-self: center;
+    font-size: 1.2em;
+
+}
+
+.contact-name {
+    color: #656565;
+    font-weight: 600;
+    margin-left: -20px;
+    margin-right: 60px;
+}
+
+.date {
+    margin-left: auto;
+}
+
+.alerts-messaging-container-person button {
+    background-color: #ffffff;
+    cursor:pointer;
+    text-align: center;
+    border: none;
+    outline: none;
+    align-self: center;
+    height:50px;
+}
+
+.selected {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+
+}
+/* ////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////// */
+
+.alerts-messaging-container-email {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    border: 1px solid rgb(204, 203, 203);
+    background-color: #f9f9f9;
+    flex-direction: column;
+}
+
+.alerts-messaging-container-email p {
+    width: 90%;
+    margin-left: 65px;
+}
+
+.alerts-messaging-container-email h3 {
+    margin-left: 65px;
+}
+
+.alerts-messaging-container-email button {
+    height: 30px;
+    width: 70px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.email-controller {
+    display: inline;
+    margin-left: auto;
+}
+
+.reply {
+    background-color: #00dabf;
+    color: #009e90;
+
+}
+
+.delete {
+    background-color: #ff503d;
+    color: white;
+
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.alerts-messaging-container-previously {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    border: 1px solid rgb(204, 203, 203);
+    align-items: center;
+}
+
+.alerts-messaging-container-previously span {
+    background-color: #dfdcdc;
+    height: 50px;
+    margin-left: auto;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////// */
+.divider-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-start;
+    background-color:#dfe0e5;
+
+}
+
+.divider-container span {
+    font-size: x-large;
+    text-align: center;
+    align-self: center;
+    margin-right: 100px;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+.calendar-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendar-date-container span:nth-child(1) {
+    font-size: 2em;
+}
+
+.calendar-date-container span:nth-child(2) {
+    font-size: 1em;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+.actual-date {
+    font-size: 2em;
+}
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+.contact-container {
+    height: 60px;
+    width: 400px;
+    background-color: #ff503d;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.contact-container img {
+    width: 20px;
+    height: 20px;
+    display: inline;
+    align-self: center;
+}
+
+.contact-container span:nth-child(2) {
+    color: white;
+    font-size: 1.2em;
+}
+
+.contact-container span:nth-child(4) {
+    color: white;
+    margin-left: 23px;
+}
+/* ////////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////////////////// */
+.reminder-specification {
+    background-color: #e3e3e3;
+    width: 400px;
+    margin: auto;
+}
+
+.reminder-specification h4 {
+    display: inline;
+    font-size: 1.3em;
+}
+
+.reminder-specification p {
+    width: 300px;
+    text-align: c;
+}
+/* ////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////// */
+.reminder-buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.reminder-buttons button:nth-child(1) {
+    background-color: #00dabf;
+    height: 30px;
+    width: 70px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    text-align: center;
+    font-size: 0.8em;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.reminder-buttons button:nth-child(2) {
+    background-color: #ff503d;
+    height: 30px;
+    width: 70px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    text-align: center;
+    font-size: 0.8em;
+
+}
+/* ////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////// */
+
+#circle-buttons-container {
+    display: flex;
+    width: 1000px;
+    margin: 0;
+    justify-content: center;
+    
+}
+
+#circle-buttons-container button {
+    height:50px;
+    cursor:pointer;
+    text-align: center;
+    border: 1px solid gray;
+    outline: none;
+    background-color: rgb(255, 249, 249);
+    font-size: 1em;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.close {
+    background-color: #82281f;
+    height: 20px;
+    width: 20px;
+    color: white;
+    text-align: center;
+    float: right;
+}
+/* //////////////////////////////////////////////////////////////////////////////////// */
 .notification {
     height: 25px;
     width: 25px;
@@ -182,14 +493,6 @@ hr {
 }
 
 
-.selected {
-    height: 10px;
-    width: 10px;
-    background-color: rgb(255, 0, 0);
-    border-radius: 50%;
-    display: inline-block;
-}
-
 .not-selected {
     height: 10px;
     width: 10px;
@@ -234,36 +537,7 @@ hr {
     margin-right: 30px;
 }
 
-.email-buttons {
-    float: right;
-    margin-right: 30px;
-    margin-bottom: 20px;
-}
 
-
-.email-buttons button:nth-child(1) {
-    background-color: #00dabf;
-    height: 30px;
-    width: 70px;
-    border: none;
-    outline: none;
-    cursor:pointer;
-    text-align: center;
-    font-size: 0.8em;
-    color: #009e90;
-}
-
-.email-buttons button:nth-child(2) {
-    background-color: #ff503d;
-    height: 30px;
-    width: 70px;
-    color: white;
-    border: none;
-    outline: none;
-    cursor:pointer;
-    text-align: center;
-    font-size: 0.8em;
-}
 
 
 #messages-remaining {
@@ -286,15 +560,13 @@ hr {
 
 .calendar-left-container {
     display: flex;
-    width: 1000px;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
+    border: 1px solid red;
+    margin-left: 440px;
 }
 
-.calendar-left-container .actual-date {
-
-}
 
 .reminder-contact {
     height: 60px;
@@ -348,89 +620,123 @@ hr {
     display: inline;
 }
 
-.reminder-descript-specific {
-    background-color: #e3e3e3;
-    width: 400px;
-
-}
-
-.reminder-descript-specific p {
-    margin-left: auto;
-    margin-right: auto;
-    width:350px;
-}
 
 
-.reminder-descript-specific span:nth-child(1) {
-    margin-left: 25px;
-}
-.reminder-descript-specific span:nth-child(2) {
-    font-size: 1.2em;
-}
-
-.reminder-buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.reminder-buttons button:nth-child(1) {
-    background-color: #00dabf;
-    height: 30px;
-    width: 70px;
-    border: none;
-    outline: none;
-    cursor:pointer;
-    text-align: center;
-    font-size: 0.8em;
-    color: #009e90;
-    margin-right: 40px;
-}
-
-.reminder-buttons button:nth-child(2) {
-    background-color: #ff503d;
-    height: 30px;
-    width: 70px;
-    color: white;
-    border: none;
-    outline: none;
-    cursor:pointer;
-    text-align: center;
-    font-size: 0.8em;
-}
-
-.actual-date {
-    font-size: 2em;
-}
-
-.close {
-    background-color: #82281f;
-    height: 20px;
-    width: 20px;
-    color: white;
-    text-align: center;
-    float: right;
-}
 
 .calendar-right-container {
     display: flex;
+    background-color: #82281f;
+}
+
+.calendar-container-2 {
     width: 1000px;
-    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
 }
 
 .months {
-    background-color: #009e90;
+    margin: auto;
+    height: 20px;
+    background-color: #82281f;
     width: 400px;
+    text-align: center;
 }
 
-.weekdays li{
-    display: inline;
-    margin-right: 30px;
-    gap: 50px;
+.months span {
+    margin: 20px;
 }
-/* .calendar-left-item {
-    border: 1px solid #e8e8e8;
 
-} */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+  }
+
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .weekdays {
+      background-color: #00dabf;
+  }
+
+  .weekdays-container {
+    margin: auto;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    font-size: 1.4em;
+    margin-right: 440px;
+    align-items: center;
+
+  }
+
+  .weekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+  }
+
+  .days {
+      background-color: white;;
+  }
+
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size:15px;
+    color: #777;
+  }
+
+  .right-date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+  }
+
+  .right-date span:nth-child(1) {
+        position: relative;
+        right: 135px;
+    }
+
+    .right-date span:nth-child(3) {
+        position: relative;
+        left: 135px;
+    }
+
+/*
+    .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+      } */
+
+
+/*
+
+
+
+
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  } */
 
 
 
