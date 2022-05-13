@@ -278,6 +278,27 @@ main {
 /* ////////////////////////////////////////////////////////////////////////// */
 
 /* ////////////////////////////////////////////////////////////////////////////// */
+
+.reminders {
+    display: flex;
+    justify-content: center;
+
+}
+
+.first-reminder {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-reminder {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////////// */
 .calendar-date-container {
     display: flex;
     flex-direction: column;
@@ -349,7 +370,6 @@ main {
 
 .reminder-specification p {
     width: 300px;
-    text-align: c;
 }
 /* ////////////////////////////////////////////////////////////////// */
 
@@ -386,6 +406,84 @@ main {
 }
 /* ////////////////////////////////////////////////////////////////// */
 
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.actual-month {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actual-month span {
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
+}
+
+.calendar {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    font-size: 1.4em;
+    align-items: center;
+  }
+
+  .weekdays {
+    background-color: #00dabf;
+}
+
+  .weekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+  }
+
+  .days {
+      background-color: white;;
+  }
+
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #777;
+  }
+
+  .days li .active {
+    /* padding: 5px;
+    border-radius: 50%;
+    background: #fb4e3d;
+    border: 4px solid gray; */
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    background: #fb4e3d;
+    border: 3px solid gray;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+  }
+
+  .days li .active.transparency {
+        opacity: 0.8;
+  }
+
+.month-list {
+    margin: 0;
+    background-color: #00dabf;
+}
+
+.month-list li {
+    display: inline-block;
+    color: white;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
 /* ////////////////////////////////////////////////////////////////// */
 
 .circle-buttons-container {
@@ -412,59 +510,120 @@ main {
     margin: auto;
     display: flex;
     background-color: #e3e3e3;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px
 }
 
-.drag {
+.air-message {
+    background-color: #dc006e;
+    width: 30%;
+    text-align: center;
     margin: auto;
     margin-top: 20px;
-    display: flex;
+    height: 30px;
+    background-color: #b6b5b6;
+    justify-content: center;
+    align-items: center;
 }
 
-.drag span {
-    background-color: #e4e2e3;
-    width: 300px;
-    text-align: center;
+.air-message span {
+    line-height: 30px;
+    vertical-align: middle;
 }
+
+.air {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 /* //////////////////////////////////////////////////////////////////// */
 
 /* //////////////////////////////////////////////////////////////////// */
 
 .person-card {
-    width: 400px;
-    height: 180px;
-    margin: auto;
+    width: 340px;
+    height: 150px;
     display: flex;
     background-color: #ffffff;
     border: 1px solid gray;
-
+    flex-direction: column;
+    text-align: end;
+    border-left-style: inset;
+    border-left-color: #fc533e;
+    border-left-width: 9px;
+    margin-left: 65px;
+    margin-right: 65px;
 }
 
-.person-card h4 {
+.circle-care .person-card:nth-child(3),
+.circle-care .person-card:nth-child(6) {
+    border-left-color: #00d9c1;
+}
+
+
+
+.person-card span {
+    margin-right: 0px;
+    position: relative;
+    margin-right: 20px;
+    font-size: 1.22em;
+}
+
+.person-card span:nth-child(1) {
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 1.24em;
+}
+
+/* .person-card h4 {
     background-color: #009e90;
     height: 20px;
-    width: 100%;
+    width: 290px;
     font-size: 1.3em;
-    
-}
+
+} */
 
 .send-button {
-    width: 170px;
     height: 40px;
+    width: 50%;
     text-align: center;
-    margin-top: auto;
     border: none;
     outline: none;
     cursor:pointer;
     background-color: #ff503d;
     color: white;
-    font-size: 1em;
+    font-size: 0.9em;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
 }
 
+.circle-care .person-card:nth-child(3) button,
+.circle-care .person-card:nth-child(6) button {
+    background-color: #00d9c1;
+    color: #006e68;
+}
+
+
 .card-decoration {
-    background-color: #ff503d;
     height: 180px;
     width: 12px;
+    border-left: 2px solid #ff0000;
+
+}
+
+
+  .person-card-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+    border: 7px solid #555;
+    position: absolute;
+    margin-top: 50px;
+
 }
 
 /* //////////////////////////////////////////////////////////////////// */
@@ -682,122 +841,6 @@ hr {
 }
 
 
-
-
-.calendar-right-container {
-    display: flex;
-    background-color: #82281f;
-}
-
-.calendar-container-2 {
-    width: 1000px;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-}
-
-.months {
-    margin: auto;
-    height: 20px;
-    background-color: #82281f;
-    width: 400px;
-    text-align: center;
-}
-
-.months span {
-    margin: 20px;
-}
-
-.month {
-    padding: 70px 25px;
-    width: 100%;
-    background: #1abc9c;
-    text-align: center;
-  }
-
-  .month ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  .month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
-
-  .weekdays {
-      background-color: #00dabf;
-  }
-
-  .weekdays-container {
-    margin: auto;
-    padding: 10px 0;
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    font-size: 1.4em;
-    margin-right: 440px;
-    align-items: center;
-
-  }
-
-  .weekdays li {
-    display: inline-block;
-    width: 12%;
-    color: #666;
-    text-align: center;
-  }
-
-  .days {
-      background-color: white;;
-  }
-
-  .days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 12%;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size:15px;
-    color: #777;
-  }
-
-  .right-date {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1em;
-  }
-
-  .right-date span:nth-child(1) {
-        position: relative;
-        right: 135px;
-    }
-
-    .right-date span:nth-child(3) {
-        position: relative;
-        left: 135px;
-    }
-
-/*
-    .days {
-        padding: 10px 0;
-        background: #eee;
-        margin: 0;
-      } */
-
-
-/*
-
-
-
-
-  .days li .active {
-    padding: 5px;
-    background: #1abc9c;
-    color: white !important
-  } */
 
 
 
