@@ -185,6 +185,11 @@ main {
     height:50px;
 }
 
+.alerts-messaging-container-person img {
+    height: 20px;
+    width: 20px;
+}
+
 .selected {
     height: 10px;
     width: 10px;
@@ -255,6 +260,8 @@ main {
     background-color: #dfdcdc;
     height: 50px;
     margin-left: auto;
+    line-height: 45px;
+    vertical-align: middle;
 }
 
 /* ////////////////////////////////////////////////////////////////////// */
@@ -332,26 +339,35 @@ main {
     height: 60px;
     width: 400px;
     background-color: #ff503d;
-    justify-content: center;
-    margin: auto;
-    flex-direction: column;
+    color: white;
+    margin: 22px;
+}
+
+.reminder-info {
+    height: 60px;
+    width: 400px;
+    background-color: #ff503d;
+    color: white;
 }
 
 .contact-container img {
-    width: 20px;
-    height: 20px;
-    display: inline;
-    align-self: center;
+    width: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    position: absolute;
+
 }
 
 .contact-container span:nth-child(2) {
     color: white;
     font-size: 1.2em;
+    margin-left: 40px;
 }
 
 .contact-container span:nth-child(4) {
     color: white;
-    margin-left: 23px;
+    margin-left: 40px;
+    margin-top: -30px;
 }
 /* ////////////////////////////////////////////////////////////////// */
 
@@ -361,6 +377,9 @@ main {
     background-color: #e3e3e3;
     width: 400px;
     margin: auto;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .reminder-specification h4 {
@@ -370,6 +389,14 @@ main {
 
 .reminder-specification p {
     width: 300px;
+    margin-left: 30px;
+
+}
+
+.reminder-date-info {
+    margin-bottom: 10px;
+    margin-left: 30px;
+
 }
 /* ////////////////////////////////////////////////////////////////// */
 
@@ -413,6 +440,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 57px;
 }
 
 .actual-month span {
@@ -430,6 +458,8 @@ main {
 
   .weekdays {
     background-color: #00dabf;
+    height: 55px;
+
 }
 
   .weekdays li {
@@ -437,6 +467,7 @@ main {
     width: 12%;
     color: #666;
     text-align: center;
+    line-height: 54px;
   }
 
   .days {
