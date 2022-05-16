@@ -203,7 +203,6 @@ main {
     margin-right: 10px;
     display: inline;
     border-radius: 5%;
-    /* border: 1px solid #ff503d; */
 }
 
 #search-bar {
@@ -213,7 +212,9 @@ main {
     margin-right: 30px;
     background: url('/images/search_FILL0_wght400_GRAD0_opsz48.png')right no-repeat;
     background-size: 15px;
+    background-position: 90% 50%;
     border: 1px solid #cccfd6;
+    width: 14%;
 }
 /* //////////////////////////////////////////////////////////// */
 
