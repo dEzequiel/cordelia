@@ -3,84 +3,99 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#header-container {
+
+
+header {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-#logo {
-    width: 447px;
-    height: 80px;
-    margin-right: auto;
-}
+.user {
+    display: flex;
+    align-items: center;
+ }
 
-#profile-pic {
+ .user img {
     width: 75px;
     height: 75px;
-}
+ }
 
-.header-item {
-    background-color: aliceblue;
+
+ .settings-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .settings-button img {
+    width: 31px;
+    height: 31px;
+ }
+
+ .dots-item {
     text-align: center;
-    margin: 0 20px;
-}
+    display: flex;
+    align-items: center;
+ }
 
-.header-item span {
-    display: block;
-}
+ .interactive {
+    display: flex;
+    gap: 30px;
+ }
+ /* //////////////////////////////////////////////////////////////////// */ */
 
+/* //////////////////////////////////////////////////////////////////// */
 main {
     width: 1000px;
     margin: auto;
 }
 
-.main-container {
+.app {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
-    justify-content:space-between;
-    column-gap: 10px;
-    padding-bottom: 10px;
-}
+    gap: 50px;
+    width: 1000px;
+    align-items: center;
+    margin: auto;
+ }
 
-.main-item {
+ .app-options {
+    display: flex;
+    flex-direction: column;
     width: 293px;
     height: 145px;
     background-color: #f4f5f7;
-    row-gap: 20px;
-}
+    border: 2px solid gray;
+ }
 
+ .top-left {
+    width: 13px;
+    height: 13px;
+ }
 
+ .bottom-right {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+ }
 
-.main-item img {
-    display: block;
-}
+ .app-main {
+    display: flex;
+    align-items: center;
+ }
 
-.app-image {
+ .app-main img {
     width: 113px;
     height: 113px;
-}
+ }
 
-.main-item img:nth-child(1){
-    margin-top: 5px;
-    margin-left: 5px;
-}
+ .app-main span {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 50px;
+ }
 
-.main-item img:nth-child(3) {
-    float: right;
-    position: relative;
-    bottom: 5px;
-}
-
-.main-item span {
-    position: relative;
-    display: block;
-    left: 130px;
-    bottom: 50px;
-    width: 150px;
-    font-size: 20px;
-}
 
 .divider {
     display: flex;
