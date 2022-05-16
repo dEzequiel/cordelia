@@ -13,6 +13,8 @@ header {
 .user {
     display: flex;
     align-items: center;
+    font-weight: 600;
+
  }
 
  .user img {
@@ -25,6 +27,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+    font-weight: 600;
+    gap: 5px;
  }
 
  .settings-button img {
@@ -41,6 +46,7 @@ header {
  .interactive {
     display: flex;
     gap: 30px;
+    margin-right: 50px;
  }
  /* //////////////////////////////////////////////////////////////////// */ */
 
@@ -52,20 +58,31 @@ main {
 .app {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 25px;
     width: 1000px;
     align-items: center;
     margin: auto;
+
  }
 
  .app-options {
     display: flex;
     flex-direction: column;
-    width: 293px;
-    height: 145px;
+    width: 295px;
+    height: 150px;
     background-color: #f4f5f7;
-    border: 2px solid gray;
+    border: 1px solid #cccfd6;
  }
+
+ .app-main span {
+    font-size: 1.4em;
+    margin-left: 10px;
+    margin-top: 50px;
+    font-weight: 600;
+    color: #868686;
+ }
+
+
 
 .app-row {
     display: flex;
@@ -93,12 +110,15 @@ main {
  .top-left {
     width: 13px;
     height: 13px;
+    margin-left: 8px;
+    margin-top: 8px;
  }
 
  .bottom-right {
     width: 18px;
     height: 18px;
     margin-left: auto;
+    margin-top: auto;
  }
 
  .app-main {
@@ -111,11 +131,6 @@ main {
     height: 113px;
  }
 
- .app-main span {
-    font-size: 25px;
-    margin-left: 10px;
-    margin-top: 50px;
- }
 
 
 .divider {
@@ -156,12 +171,30 @@ main {
     outline: none;
     background-color: white;
     font-size: 1em;
+    margin-right: 20px;
+
 }
 
 #alerts-messaging-container-buttons button:nth-child(2) {
     color: white;
     background-color: #ff503d;
     margin-left: 30px;
+    width: 150px;
+}
+
+#alerts-messaging-container-buttons button:nth-child(4) {
+    background-color: #e6e6e6;
+    width: 80px;
+    border: 1px solid #cccfd6;
+}
+
+.alerts-messaging-container-previously  span{
+    display: flex;
+    width: 190px;
+    font-size: 0.9em;
+    justify-content: center;
+    color: #949899;
+    font-weight: 600;
 }
 
 
@@ -177,7 +210,10 @@ main {
     align-self: center;
     margin-left: auto;
     height: 23px;
-
+    margin-right: 30px;
+    background: url('/images/search_FILL0_wght400_GRAD0_opsz48.png')right no-repeat;
+    background-size: 15px;
+    border: 1px solid #cccfd6;
 }
 /* //////////////////////////////////////////////////////////// */
 
@@ -268,18 +304,23 @@ main {
 .email-controller {
     display: inline;
     margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.email-controller span {
+    font-weight: 900;
 }
 
 .reply {
     background-color: #00dabf;
     color: #009e90;
-
+    margin-right: 15px;
 }
 
 .delete {
     background-color: #ff503d;
     color: white;
-
 }
 
 /* ////////////////////////////////////////////////////////////////////// */
@@ -778,7 +819,6 @@ hr {
     width: 10px;
     background-color: rgb(179, 178, 178);
     border-radius: 50%;
-    display: inline-block;
 }
 
 .info {
@@ -1213,7 +1253,7 @@ hr {
     }
 
     .divider-container span {
-        font-size: 1.2em;1
+        font-size: 1.2em;
     }
 
     .person-card-img {
