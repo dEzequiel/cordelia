@@ -20,7 +20,10 @@
 
             <div class="interactive">
                 <div class="user">
-                    <img id="profile-pic" src="../images/senior.png" alt="profilePicture">
+                    <div>
+                        <div class="my-user-notification"><div><span>6</span></div></div>
+                        <img id="profile-pic" src="../images/senior.png" alt="profilePicture">
+                    </div>
                     <span>Cordelia Zaratustra</span>
                 </div>
 
@@ -92,6 +95,7 @@
                     <div class="app-main">
                         <img src="../images/daily-care-o-gram.png" alt="Daily care-o-gram">
                         <span>DAILY<br>CARE-O-GRAM</span>
+
                     </div>
                     <img src="/images/Layer_3.png" class="bottom-right">
                 </div>
@@ -142,8 +146,11 @@
 
         <div id="alerts-messaging-container-buttons">
             <input type="checkbox" class="check-all">
-            <button>New Message</button>
-            <button>Inbox</button>
+            <button id="new-message">New Message</button>
+            <div>
+                <div class="email-notification"><div><span>2</span></div></div>
+                <button id="inbox">Inbox</button>
+            </div>
             <button>Sent</button>
             <input type="text" placeholder="Search" id="search-bar">
         </div>
@@ -272,9 +279,9 @@
 
         <div class="second-reminder">
             <div class="actual-month">
-                <span><img src="/images/chevron_left_FILL0_wght400_GRAD0_opsz48.png"></span>
+                <button><img src="/images/chevron_left_FILL0_wght400_GRAD0_opsz48.png"></button>
                 <span>JULY 2014</span>
-                <span><img src="/images/chevron_right_FILL0_wght400_GRAD0_opsz48.png"</span>
+                <button><img src="/images/chevron_right_FILL0_wght400_GRAD0_opsz48.png" ></nutton>
             </div>
 
             <br>
@@ -343,6 +350,9 @@
     <div class="circle-buttons-container">
         <button>FIND</button>
         <button>MY CIRCLE OF CARE</button>
+        <div>
+            <div class="pending-notification"><div><span>1</span></div></div>
+        </div>
         <button>PENDING</button>
     </div>
 
