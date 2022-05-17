@@ -58,7 +58,8 @@ main {
 .app {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    column-gap: 54.5px;
+    row-gap: 20px;
     width: 1000px;
     align-items: center;
     margin: auto;
@@ -231,6 +232,7 @@ main {
 
 }
 
+
 .alerts-messaging-container-person span {
     align-self: center;
     font-size: 1.2em;
@@ -240,8 +242,8 @@ main {
 .contact-name {
     color: #656565;
     font-weight: 600;
-    margin-left: -20px;
-    margin-right: 60px;
+    /* margin-left: -20px;
+    margin-right: 60px; */
 }
 
 .date {
@@ -305,7 +307,7 @@ main {
 .email-controller {
     display: inline;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 33px;
     margin-bottom: 10px;
 }
 
@@ -358,7 +360,36 @@ main {
     font-size: x-large;
     text-align: center;
     align-self: center;
-    margin-right: 100px;
+    /* margin-right: 100px; */
+    color: #868686;
+}
+
+.divider-container span:nth-child(3) {
+    font-size: 1em;
+    margin-left: auto;
+}
+
+.divider-container img:nth-child(1) {
+    margin-right: 50px;
+    margin-left: 40px;
+}
+
+.divider-container img:nth-child(4) {
+    width: 25px;
+    height: 25px;
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 8px;
+}
+
+.divider-container img:nth-child(5) {
+    width: 27px;
+    height: 34px;
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 260px;
 }
 /* ////////////////////////////////////////////////////////////////////////// */
 
@@ -394,10 +425,13 @@ main {
 
 .calendar-date-container span:nth-child(1) {
     font-size: 2em;
+    color: #8e9396;
+    font-weight: 600;
 }
 
 .calendar-date-container span:nth-child(2) {
-    font-size: 1em;
+    color: #8e9396;
+    font-size: 1.5em;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////// */
@@ -476,6 +510,10 @@ main {
     margin-left: 30px;
 
 }
+
+.reminder-date-info span, h4, p {
+    color: #626264;
+}
 /* ////////////////////////////////////////////////////////////////// */
 
 /* ////////////////////////////////////////////////////////////////// */
@@ -488,7 +526,7 @@ main {
 .reminder-buttons button:nth-child(1) {
     background-color: #00dabf;
     height: 30px;
-    width: 70px;
+    width: 80px;
     border: none;
     outline: none;
     cursor:pointer;
@@ -496,6 +534,8 @@ main {
     font-size: 0.8em;
     margin-right: 20px;
     margin-bottom: 20px;
+    font-weight: 600;
+    color: #017d75;
 }
 
 .reminder-buttons button:nth-child(2) {
@@ -507,6 +547,8 @@ main {
     cursor:pointer;
     text-align: center;
     font-size: 0.8em;
+    color: white;
+    font-weight: 600;
 
 }
 /* ////////////////////////////////////////////////////////////////// */
@@ -521,10 +563,21 @@ main {
     height: 57px;
 }
 
-.actual-month span {
-    text-align: center;
+.actual-month span:nth-child(1) {
+    font-size: 2em;
+    margin-right: auto;
+}
+
+.actual-month span:nth-child(2) {
     font-size: 2em;
     margin: auto;
+    color: #929b9a;
+    font-weight: 600;
+}
+
+.actual-month span:nth-child(3) {
+    font-size: 2em;
+    margin-left: auto;
 }
 
 .calendar {
@@ -635,13 +688,12 @@ main {
 }
 
 .air-message {
-    background-color: #dc006e;
     width: 30%;
     text-align: center;
     margin: auto;
     margin-top: 20px;
     height: 30px;
-    background-color: #b6b5b6;
+    background-color: #e4e2e3;
     justify-content: center;
     align-items: center;
 }
@@ -677,7 +729,7 @@ main {
 
 .circle-care .person-card:nth-child(3),
 .circle-care .person-card:nth-child(6) {
-    border-left-color: #00d9c1;
+    border-left-color: #00ffe1;
 }
 
 
@@ -720,7 +772,7 @@ main {
 
 .circle-care .person-card:nth-child(3) button,
 .circle-care .person-card:nth-child(6) button {
-    background-color: #00d9c1;
+    background-color: #02dbc0;
     color: #006e68;
 }
 
@@ -826,10 +878,11 @@ hr {
     display: inline;
 }
 
-.name {
-    /* text-align: left; */
-    margin-left: 6px;
+.email-name {
+    text-align: center;
+    margin-left: auto;
     color: #656565;
+
     /* margin-right: 30px; */
 }
 
@@ -942,6 +995,8 @@ hr {
 }
 
 
+
+
 @media screen and (min-width: 640px) and (max-width: 1024px) {
 
     header {
@@ -985,8 +1040,6 @@ hr {
     .app-main span{
         font-size: 1em
     }
-
-
 
     #alerts-messaging-container-buttons {
         width: 90%;
@@ -1080,6 +1133,8 @@ hr {
         margin: auto;
         width: 90%;
     }
+
+
     /* #logo {
         width: 50%;
         height: 50%;
@@ -1256,6 +1311,8 @@ hr {
     .divider-container span {
         font-size: 1.2em;
     }
+
+
 
     .person-card-img {
         display: none;
