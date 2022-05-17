@@ -1,3 +1,7 @@
+body{
+    overflow-x:hidden;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -567,7 +571,9 @@ font-weight: 600;
 .reminders {
     display: flex;
     justify-content: center;
-
+    border: 1px solid #c7ced4;
+    width: 1000px;
+    margin: auto;
 }
 
 .first-reminder {
@@ -617,11 +623,26 @@ font-weight: 600;
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 .contact-container {
-    height: 60px;
+    height: 70px;
     width: 400px;
     background-color: #ff503d;
     color: white;
     margin: 22px;
+    display: flex;
+}
+
+
+.quit {
+    border: none;
+    outline: none;
+    background-color: #eb3f3f;
+    height: 25px;
+    width: 25px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: auto;
+    cursor:pointer;
+    color: white;
 }
 
 .reminder-info {
@@ -632,14 +653,33 @@ font-weight: 600;
 }
 
 .contact-container img {
-    width: 30px;
-    display: inline-block;
-    margin-top: 10px;
-    position: absolute;
-
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4%;
+    margin-left: 20px;
+    filter: brightness(0) invert(1);
 }
 
-.contact-container span:nth-child(2) {
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+
+.info span:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.info span:nth-child(2) {
+    color: white;
+    font-size: 1em;
+}
+
+/* .contact-container span:nth-child(2) {
     color: white;
     font-size: 1.2em;
     margin-left: 40px;
@@ -649,7 +689,7 @@ font-weight: 600;
     color: white;
     margin-left: 40px;
     margin-top: -30px;
-}
+} */
 /* ////////////////////////////////////////////////////////////////// */
 
 
@@ -847,7 +887,7 @@ font-weight: 600;
     border: 1px solid #e3e3e3;
     outline: none;
     font-size: 1em;
-    width: 50%;
+    width: 100%;
     background-color: white;
     color: #929695;
     font-size: 1.2em;
@@ -1059,9 +1099,6 @@ hr {
     border-radius: 50%;
 }
 
-.info {
-    display: inline;
-}
 
 .email-name {
     color: #656565;
@@ -1360,13 +1397,9 @@ hr {
         grid-template-columns: 8% 3% 20% 20% 20% 5%;
     }
 
-    .date {
-        margin-left: 0;
-    }
+    .date {margin-left: 0;}
 
-    .alerts-messaging-container-person span {
-        font-size: 0.9em;
-    }
+    .alerts-messaging-container-person span {font-size: 0.9em;}
 
     .alerts-messaging-container-previously,
     .alerts-messaging-container-previously span,
@@ -1383,88 +1416,39 @@ hr {
 
     .email-controller {margin-right: 50px;}
 
-    .reminders {flex-direction: column;}
-
+    .reminders {flex-direction: column; width: 100%;}
     .first-reminder {align-items: center;}
-    .first-reminder img {display: none;}
+    .contact-container, .reminder-specification {width: 100%;}
 
-    .contact-container {
-        width: 100%;
-    }
 
-    .reminder-specification {
-        width: 100%;
-    }
-
-    .reminder-specification p {
-        width: 90%;
-    }
-
-    .calendar {
-        width: 90%;
-    }
-
-    .weekdays {
-        width: 100%;
-    }
-
-    .days {
-        width: 90%;
-    }
-
-    .days li{
-        font-size: 1em;
-
-    }
-
-    .days li .active {
-        /* padding: 5px;
-        border-radius: 50%;
-        background: #fb4e3d;
-        border: 4px solid gray; */
-        width: 25px;
-        height: 25px;
-      }
+    .calendar {width: 90%;}
+    .weekdays, .days {width: 100%;}
 
     .circle-buttons-container {
         width: 100%;
         justify-content: center;
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
-
-    .circle-care {
-        width: 100%;
-        justify-content: center;
+    .pending-notification div {
+        margin-right: -120px;
+        margin-top: 15px;
     }
-
-    .air-message {
-        width: 100%;
-    }
-
-    .person-card {
-        width: 100%;
-    }
-
-    .person-card span {
+    .pending-notification span {
         font-size: 1em;
-    }
+        color: white;
+        font-weight: 600;
+        }
+    .circle-care {width: 100%; justify-content: center;}
+    .air-message, .person-card {width: 100%;}
+    .person-card span {font-size: 1em;}
+    .person-card-img {width: 60px; height: 60px;}
+    .send-button {width: 50%;}
 
     .divider-container {
         margin: auto;
         width: 100%;
     }
 
-    .divider-container span {
-        font-size: 1.2em;
-    }
+    .divider-container span {font-size: 1.2em;}
 
-
-
-    .person-card-img {
-        display: none;
-    }
-
-    .send-button {
-        width: 80%;
-    }
 }
