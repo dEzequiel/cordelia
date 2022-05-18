@@ -1,6 +1,4 @@
-body{
-    overflow-x:hidden;
-}
+
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -121,7 +119,7 @@ main {
 
  .my-user-notification {
     display: flex;
-    width: 295px;
+    width: 70px;
     position: absolute;
 }
 
@@ -132,11 +130,10 @@ main {
     width: 30px;
     text-align: center;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -40px;
+    right: -220px;
     border-radius: 50%;
     margin-right: 210px;
-    margin-bottom: 15px;
 }
 
 .my-user-notification span {
@@ -513,7 +510,7 @@ font-weight: 600;
     margin-left: auto;
     line-height: 45px;
     vertical-align: middle;
-    margin-right: 20px;
+    margin-right: 40px;
     width: 20%;
 }
 
@@ -524,46 +521,44 @@ font-weight: 600;
     display: flex;
     width: 100%;
     height: 50px;
-    justify-content: flex-start;
     background-color:#dfe0e5;
 
 }
 
 .divider-container span {
     font-size: x-large;
-    text-align: center;
     align-self: center;
     /* margin-right: 100px; */
     color: #868686;
 }
 
-.divider-container span:nth-child(3) {
-    font-size: 1em;
-    margin-left: auto;
-}
 
-.divider-container img:nth-child(1) {
-    margin-right: 50px;
+.divider-container-images {
+    width: 50px;
+    height: 50px;
     margin-left: 40px;
+    margin-right: 40px;
+
 }
 
-.divider-container img:nth-child(4) {
-    width: 25px;
-    height: 25px;
-    display: inline;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 8px;
+#reminder-dates {
+    display: flex;
+    margin-left: auto;
+    margin-right: 40px;
+
 }
 
-.divider-container img:nth-child(5) {
-    width: 27px;
-    height: 34px;
-    display: inline;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 230px;
+#reminder-dates img  {
+    opacity: .4;
+    width: 30px;
+    height: 30px;
+    align-self: center;
 }
+
+#reminder-dates img:nth-child(3) {
+    margin-left: 10px;
+}
+
 /* ////////////////////////////////////////////////////////////////////////// */
 
 /* ////////////////////////////////////////////////////////////////////////////// */
@@ -579,12 +574,14 @@ font-weight: 600;
 .first-reminder {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+
 }
 
 .second-reminder {
     display: flex;
     flex-direction: column;
-
+    margin-top: 20px;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////// */
@@ -772,18 +769,18 @@ font-weight: 600;
 .actual-month {
 
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 57px;
-    margin-top: 7px;
+
 }
 
 
 .actual-month span {
     font-size: 2em;
-    margin: auto;
     color: #929b9a;
     font-weight: 600;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .actual-month button {
@@ -798,24 +795,24 @@ font-weight: 600;
 }
 
 .actual-month button:nth-child(1) {
-    margin-left: auto;
+    margin-right: auto;
 }
 
 .actual-month button:nth-child(2) {
-    margin-right: auto;
+    margin-left: auto;
 }
 
 .calendar {
     background-color: rgb(255, 255, 255);
-    width: 400px;
+    /* width: 400px; */
     font-size: 1.4em;
-    align-items: center;
+    margin-right: 10px;
+    margin-top: 8px;
   }
 
   .weekdays {
     background-color: #00dabf;
     height: 55px;
-
 }
 
   .weekdays li {
@@ -1216,148 +1213,91 @@ hr {
 
 
 
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-
-    header {
-        justify-content: space-around;
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    header {justify-content: space-around;}
+    #logo {width: 50%;}
+    #profile-pic {width: 75px; height: 75px;}
+    .my-user-notification div {
+        margin-right: 220px;
+        top: -40px;
+        text-align: center;
+        height: 25px;
+        width: 25px;
+        font-size: 0.9em;
     }
-
-    header span {
-        display: none;
-    }
-
-    header img {
-        width: 50%;
-    }
-
-    .interactive img {
-        width: 90%;
-
-    }
-
-    header .dots-item {
-        display: none;
-    }
-
-    .settings-button {
-        margin: auto;
-    }
+    .my-user-notification div > span {line-height: 25px;}
 
 
     .app {
-        width: 90%;
+        width: 100%;
         flex-wrap: wrap;
         gap: 10px;
-        margin: auto;
         align-items: center;
     }
 
-    .app-options {
-        flex-basis: 48%;
+    #alerts-messaging-container-buttons{
+        width: 100%;
+        grid-template-columns: 5.5% 27% 23% 22% 15%;
     }
-
-    .app-main span{
-        font-size: 1em;
-    }
-
-    #alerts-messaging-container-buttons {
-        width: 90%;
-    }
-
-    #search-bar {
-        width: 23%;
-    }
-
     .alerts-messaging-container-person {
-        width: 90%;
+        width: 100%;
+        grid-template-columns: 5.5% 1.6% 20% 20% 30% 3%;
     }
 
-    .alerts-messaging-container-email {
-        width: 90%;
-        align-items: flex-start;
-    }
-
-    .alerts-messaging-container-email p {
-        width: 80%;
+    .alerts-messaging-container-email,
+    #search-bar {
+        width: 100%;
     }
 
     .alerts-messaging-container-previously {
-        width: 90%;
+        width: 100%;
     }
 
-    .first-reminder {
-
-        align-items: center;
-    }
-
-    .first-reminder img {
-        display: none;
-    }
-
-    .contact-container {
-        width: 300px;
-    }
-
-    .reminder-specification {
-        width: 300px;
-    }
-
-    .reminder-specification p {
-        width: 90%;
-    }
-
-    .calendar {
-        width: 95%;
-    }
-
-    .weekdays {
-        width: 90%;
-    }
-
-    .days {
-        width: 90%;
-    }
-
-    .days li{
-        font-size: 1em;
-
-    }
-
-    .days li .active {
-        /* padding: 5px;
-        border-radius: 50%;
-        background: #fb4e3d;
-        border: 4px solid gray; */
-        width: 25px;
-        height: 25px;
-      }
+    .reminders {flex-direction: column; width: 100%;}
+    .first-reminder {align-items: center;}
+    .contact-container, .reminder-specification {width: 90%;}
 
 
-    .circle-buttons-container {
-        width: 90%;
-        justify-content: center;
-        font-size: 0.8em;
-    }
-
-    .circle-care {
-        width: 90%;
-        justify-content: center;
-    }
-
-    .air-message {
-        width: 60%;
-    }
+    .calendar {width: 100%;;}
+    .weekdays, .days {width: 93.6%;}
 
     .divider-container {
-        margin: auto;
-        width: 90%;
+        height: 35px;
     }
 
+    .divider-container span {font-size: 1em; }
+    .divider-container-images {
+        width: 30px;
+        height: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 30px;
+    }
 
-    /* #logo {
-        width: 50%;
-        height: 50%;
-    } */
+    .circle-buttons-container {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.7em;
+    }
+    .pending-notification div {
+        margin-right: -120px;
+        margin-top: 15px;
+    }
+    .pending-notification span {
+        font-size: 1em;
+        color: white;
+        font-weight: 600;
+        }
+    .circle-care {width: 100%;}
+    .air-message, .person-card {width: 50%; margin: auto;}
+    .person-card span {font-size: 1em;}
+    .person-card-img {width: 80px; height: 80px;}
+    .send-button {width: 40%;}
+}
+
+
+@media screen and (min-width: 360) {
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
@@ -1365,17 +1305,22 @@ hr {
     header {justify-content: space-around;}
     #logo {width: 50%; height: 100%;}
 
-    #profile-pic {width: 90%; height: 90%;}
+    #profile-pic {width: 100%; height: 100%;}
     .my-user-notification div {
-        margin-right: 235px;
+        margin-right: 245px;
+        top: -25px;
         text-align: center;
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
+        font-size: 0.9em;
     }
 
-    header span  {display: none;}
+    .my-user-notification div > span {line-height: 20px;}
 
-    header .dots-item {display: none;}
+
+    .settings-button span, .dots-item  {display: none;}
+    .user span:nth-child(3) {display: none;}
+
 
     .app {
         width: 100%;;
@@ -1388,13 +1333,13 @@ hr {
 
     #alerts-messaging-container-buttons{
         width: 100%;
-        grid-template-columns: 8% 25% 25% 20% 20%;
+        grid-template-columns: 8% 25% 25% 20% 20.7%;
 
     }
 
     .alerts-messaging-container-person {
         width: 100%;
-        grid-template-columns: 8% 3% 20% 20% 20% 5%;
+        grid-template-columns: 8% 3% 20% 22% 20% 5%;
     }
 
     .date {margin-left: 0;}
@@ -1420,9 +1365,11 @@ hr {
     .first-reminder {align-items: center;}
     .contact-container, .reminder-specification {width: 100%;}
 
-
-    .calendar {width: 90%;}
-    .weekdays, .days {width: 100%;}
+    .first-reminder, .second-reminder {
+        width: 100%;
+        margin: auto;
+    }
+    .weekdays, .days {width: 91%; margin: auto;}
 
     .circle-buttons-container {
         width: 100%;
@@ -1430,7 +1377,7 @@ hr {
         font-size: 0.7em;
     }
     .pending-notification div {
-        margin-right: -120px;
+        margin-right: -118px;
         margin-top: 15px;
     }
     .pending-notification span {
@@ -1441,14 +1388,25 @@ hr {
     .circle-care {width: 100%; justify-content: center;}
     .air-message, .person-card {width: 100%;}
     .person-card span {font-size: 1em;}
-    .person-card-img {width: 60px; height: 60px;}
+    .person-card-img {width: 50px; height: 50px; margin-top:78px;
+    }
     .send-button {width: 50%;}
 
     .divider-container {
-        margin: auto;
-        width: 100%;
+        height: 35px;
     }
 
-    .divider-container span {font-size: 1.2em;}
+    .divider-container span {font-size: 1em; }
+    .divider-container-images {
+        width: 30px;
+        height: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 30px;
+    }
+
+    #reminder-dates span {
+        font-size: 0.7em;
+    }
 
 }
