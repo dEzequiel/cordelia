@@ -21,7 +21,6 @@ header {
  .user img {
     width: 75px;
     height: 75px;
-    margin-right: 8px;
  }
 
 
@@ -75,6 +74,10 @@ main {
     height: 150px;
     background-color: #f4f5f7;
     border: 1px solid #cccfd6;
+ }
+
+ .app-options:hover {
+     cursor: pointer;
  }
 
  .app-main span {
@@ -241,6 +244,14 @@ main {
     margin-right: 30px;
 }
 
+/* /////////////////////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////////////////// */
 #alerts-messaging-container{
     width: 1000px;
     margin: auto;
@@ -249,7 +260,6 @@ main {
 
 }
 
-/* /////////////////////////////////////////////////////////// */
 #alerts-messaging-container-buttons {
     width: 1000px;
     margin: auto;
@@ -581,7 +591,7 @@ font-weight: 600;
 .second-reminder {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////// */
@@ -770,7 +780,8 @@ font-weight: 600;
 
     display: flex;
     height: 57px;
-
+    margin-top: 10px;
+    margin-bottom: 23px;
 }
 
 
@@ -802,13 +813,7 @@ font-weight: 600;
     margin-left: auto;
 }
 
-.calendar {
-    background-color: rgb(255, 255, 255);
-    /* width: 400px; */
-    font-size: 1.4em;
-    margin-right: 10px;
-    margin-top: 8px;
-  }
+
 
   .weekdays {
     background-color: #00dabf;
@@ -1308,28 +1313,44 @@ hr {
 }
 
 
+@media screen and (min-width: 640px) {
+    .app {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: flex-start;
+        margin: 0%;
+        justify-content: flex-end;
+        /* justify-content: center; */
+    }
+}
 
 
-@media screen and (min-width: 320px) and (max-width: 640px) {
+@media screen and (min-width: 360px) {
 
-    header {justify-content: space-around;}
-    #logo {width: 50%; height: 100%;}
+    header {
+        justify-content: space-between;
+        flex-direction: column;
 
-    #profile-pic {width: 100%; height: 100%;}
+    }
+
+    #logo {width: 50%; height: 100%; display: flex; margin: auto;}
+    .interactive {margin: auto; ;}
+    #profile-pic {width: 60px; height: 60px}
     .my-user-notification div {
-        margin-right: 245px;
-        top: -25px;
+        margin-right: 225px;
+        top: -34px;
         text-align: center;
-        height: 20px;
-        width: 20px;
+        height: 25px;
+        width: 25px;
         font-size: 0.9em;
     }
 
-    .my-user-notification div > span {line-height: 20px;}
+    .my-user-notification div > span {line-height: 25px;}
 
 
-    .settings-button span, .dots-item  {display: none;}
-    .user span:nth-child(3) {display: none;}
+    .dots-item  {display: none;}
+    /* .user span:nth-child(3) {display: none;} */
 
 
     .app {
@@ -1379,7 +1400,13 @@ hr {
         width: 100%;
         margin: auto;
     }
-    .weekdays, .days {width: 91%; margin: auto;}
+    /* .weekdays, .days {width: 91%; margin: auto;} */
+
+    .weekdays ul {width: 100%;}
+
+    .weekdays li, .days li {
+        font-size: 1.4em;
+    }
 
     .circle-buttons-container {
         width: 100%;
@@ -1387,7 +1414,7 @@ hr {
         font-size: 0.7em;
     }
     .pending-notification div {
-        margin-right: -118px;
+        margin-right: -110px;
         margin-top: 15px;
     }
     .pending-notification span {
