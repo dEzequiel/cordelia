@@ -316,33 +316,37 @@ main {
  .email-notification {
         display: flex;
         position: absolute;
-        width: 100px;
-}
-.email-notification div {
+        margin-left: 250px;
+    }
+.email-notification span {
+
     background-color: #fe4f3c;
     height: 30px;
     width: 30px;
     text-align: center;
     position: absolute;
-    top: -13px;
-    right: 0px;
+    margin: auto;
+    /* top: -13px;
+    left: 200px; */
+    color: white;
+    font-weight: 600;
+    margin-right: 100px;
     border-radius: 50%;
-    margin-right: auto;
-    margin-bottom: 60px;
+
 }
 
 
-.email-notification span {
+/* .email-notification span {
     font-size: 1em;
     color: white;
     font-weight: 600;
-}
+} */
 
-.email-notification div > span {
+/* .email-notification div > span {
     line-height: 30px;
     vertical-align: middle;
     font-weight: 600;
-}
+} */
 
 
 .pending-notification {
@@ -855,6 +859,7 @@ font-weight: 600;
     border-radius: 50%;
     text-align: center;
     color: white;
+    margin: auto;
   }
 
   .days li .active.transparency {
@@ -901,6 +906,30 @@ font-weight: 600;
     border-bottom-color: #fc533e;
     border-bottom-width: 5px;
 }
+
+.pending-button {
+    display: flex;
+    position: absolute;
+}
+
+.pending-button div {
+    background-color: #fe4f3c;
+    color: white;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    left: 220px;
+    border-radius: 50%;
+}
+
+.pending-button div > span {
+    line-height: 20px;
+    vertical-align: middle;
+}
+
 /* ////////////////////////////////////////////////////////////////// */
 
 /* ////////////////////////////////////////////////////////////////// */
@@ -1214,119 +1243,8 @@ hr {
     margin-top: 5px;
     display: inline;
 }
-
-
-
-
-@media screen and (min-width: 800px) and (max-width: 1024px) {
-    header {justify-content: space-around;}
-    #logo {width: 50%;}
-    #profile-pic {width: 75px; height: 75px;}
-    .my-user-notification div {
-        margin-right: 220px;
-        top: -40px;
-        text-align: center;
-        height: 25px;
-        width: 25px;
-        font-size: 0.9em;
-    }
-    .my-user-notification div > span {line-height: 25px;}
-
-
-    .app {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: auto;
-        /* justify-content: center; */
-        align-items: center;
-    }
-
-
-    #alerts-messaging-container-buttons{
-        width: 100%;
-        grid-template-columns: 5.5% 27% 23% 22% 15%;
-    }
-    .alerts-messaging-container-person {
-        width: 100%;
-        grid-template-columns: 4.5% 1.5% 20% 20% 30% 3%;
-    }
-
-
-    .alerts-messaging-container-email,
-    #search-bar {
-        width: 100%;
-    }
-
-    .email-notification div {
-        right: -95px;
-    }
-
-    .alerts-messaging-container-previously {
-        width: 100%;
-    }
-
-    .alerts-messaging-container-previously span {
-        width: 30%;
-    }
-
-    .reminders {flex-direction: column; width: 100%;}
-    .first-reminder {align-items: center;}
-    .contact-container, .reminder-specification {width: 90%;}
-
-
-    .calendar {width: 100%;;}
-    .weekdays, .days {width: 93.6%;}
-
-    .divider-container {
-        height: 35px;
-    }
-
-    .divider-container span {font-size: 1em; }
-    .divider-container-images {
-        width: 30px;
-        height: 30px;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: 30px;
-    }
-
-    .circle-buttons-container {
-        width: 100%;
-        justify-content: center;
-        font-size: 0.7em;
-    }
-    .pending-notification div {
-        margin-right: -185px;
-        margin-top: 15px;
-    }
-    .pending-notification span {
-        font-size: 1em;
-        color: white;
-        font-weight: 600;
-        }
-    .circle-care {width: 100%;}
-    .air-message, .person-card {width: 50%; margin: auto;}
-    .person-card span {font-size: 1em;}
-    .person-card-img {width: 80px; height: 80px;}
-    .send-button {width: 40%;}
-}
-
-
-@media screen and (min-width: 640px) {
-    .app {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: flex-start;
-        margin: 0%;
-        justify-content: flex-end;
-        /* justify-content: center; */
-    }
-}
-
-
-@media screen and (min-width: 360px) {
+/*  */
+@media screen and (min-width: 360px) and (max-width: 600px) {
 
     header {
         justify-content: space-between;
@@ -1364,13 +1282,19 @@ hr {
 
     #alerts-messaging-container-buttons{
         width: 100%;
-        grid-template-columns: 8% 25% 25% 20% 20.7%;
+        grid-template-columns: 8% 30% 25% 20% 15%;
 
     }
 
     .alerts-messaging-container-person {
         width: 100%;
         grid-template-columns: 8% 3% 20% 22% 20% 5%;
+    }
+
+    .check-all {
+        width: 15px;
+        height: 15px;
+        margin: auto;
     }
 
     .date {margin-left: 0;}
@@ -1413,20 +1337,21 @@ hr {
         justify-content: center;
         font-size: 0.7em;
     }
-    .pending-notification div {
-        margin-right: -110px;
-        margin-top: 15px;
+    .pending-button div {
+        height: 15px;
+        width: 15px;
+        left: 95px
     }
-    .pending-notification span {
-        font-size: 1em;
-        color: white;
-        font-weight: 600;
-        }
+    .pending-button div > span {
+        line-height: 15px;
+        vertical-align: middle;
+    }
     .circle-care {width: 100%; justify-content: center;}
-    .air-message, .person-card {width: 100%;}
-    .person-card span {font-size: 1em;}
-    .person-card-img {width: 50px; height: 50px; margin-top:78px;
+    .air-message {width: 90%;}
+    .person-card span {font-size: 1em; width: 80%; margin-left: auto;}
+    .person-card-img {width: 80px; height: 80px; margin-top:40px;
     }
+    .person-card {width: 100%; margin: auto;}
     .send-button {width: 50%;}
 
     .divider-container {
@@ -1442,8 +1367,256 @@ hr {
         margin-right: 30px;
     }
 
+    #reminder-dates img{
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+    }
+
     #reminder-dates span {
         font-size: 0.7em;
     }
+}
+
+@media screen and (min-width: 420px) and (max-width: 548px) {
+
+
+    .pending-button div {
+        height: 15px;
+        width: 15px;
+        left: 118px
+    }
+    .pending-button div > span {
+        line-height: 15px;
+        vertical-align: middle;
+    }
+}
+
+@media  screen and (min-width: 550px) and (max-width: 599px) {
+    .pending-button div {
+        height: 15px;
+        width: 15px;
+        left: 160px
+    }
+    .pending-button div > span {
+        line-height: 15px;
+        vertical-align: middle;
+    }
+
+    .person-card-img {width: 100px; height: 100px; margin-top:20px;
+    }
+
+    .alerts-messaging-container-person {
+        grid-template-columns: 8% 1.5% 20% 22% 20% 5%;
+    }
 
 }
+
+@media screen and (min-width: 600px) and (max-width:799px) {
+
+    header {justify-content: space-around;}
+    #logo {width: 50%;}
+    #profile-pic {width: 75px; height: 75px;}
+
+    .check-all {
+        width: 15px;
+        height: 15px;
+        margin: auto;
+    }
+
+    #alerts-messaging-container-buttons{
+        width: 100%;
+        grid-template-columns: 8% 30% 25% 20% 15%;
+    }
+
+    .alerts-messaging-container-previously,
+    .alerts-messaging-container-previously span,
+    .alerts-messaging-container-email,
+    #search-bar {
+        width: 100%;
+    }
+
+    .alerts-messaging-container-person {
+        width: 100%;
+        grid-template-columns: 5.5% 1.5% 20% 20% 30% 3%;
+    }
+
+    .pending-button div {
+        height: 15px;
+        width: 15px;
+        left: 170px
+    }
+    .pending-button div > span {
+        line-height: 15px;
+        vertical-align: middle;
+    }
+
+    .circle-buttons-container {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.7em;
+    }
+
+    .alerts-messaging-container-person {
+        grid-template-columns: 8% 1.5% 20% 22% 30% 5%;
+    }
+
+    .reminders {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .app {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .circle-care {width: 100%; justify-content: center;}
+    .air-message {width: 90%;}
+    .person-card span {font-size: 1em; width: 80%; margin-left: auto;}
+    .person-card-img {width: 80px; height: 80px; margin-top:40px;
+    }
+    .person-card {width: 100%; margin: auto;}
+    .send-button {width: 50%;}
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    header {justify-content: space-around;}
+    #logo {width: 50%;}
+    #profile-pic {width: 75px; height: 75px;}
+    .my-user-notification div {
+        margin-right: 220px;
+        top: -40px;
+        text-align: center;
+        height: 25px;
+        width: 25px;
+        font-size: 0.9em;
+    }
+    .my-user-notification div > span {line-height: 25px;}
+
+
+    .app {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: auto;
+        align-items: center;
+    }
+
+
+    #alerts-messaging-container-buttons{
+        width: 100%;
+        grid-template-columns: 5.5% 27% 23% 22% 15%;
+    }
+    .alerts-messaging-container-person {
+        width: 100%;
+        grid-template-columns: 5.5% 1.5% 20% 20% 30% 3%;
+    }
+
+
+    .alerts-messaging-container-email,
+    #search-bar {
+        width: 100%;
+    }
+
+    .check-all {
+        width: 15px;
+        height: 15px;
+        margin: auto;
+    }
+
+    #search-bar {
+        margin-left: 30px
+    }
+
+    .email-notification  {
+        margin-left: 490px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .alerts-messaging-container-previously {
+        width: 100%;
+    }
+
+    .alerts-messaging-container-previously span {
+        width: 30%;
+    }
+
+    .reminders {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* .reminders {flex-direction: column; width: 100%;}
+    .first-reminder {align-items: center;}
+    .contact-container, .reminder-specification {width: 100%;}
+
+
+    .calendar {width: 100%;;}
+    .weekdays ul, .days ul {width: 100%;}
+
+    .divider-container {
+        height: 35px;
+    } */
+
+    .divider-container span {font-size: 1em; }
+    .divider-container-images {
+        width: 30px;
+        height: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 30px;
+    }
+
+    .circle-buttons-container {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.7em;
+    }
+    .pending-notification div {
+        margin-right: -185px;
+        margin-top: 15px;
+    }
+    .pending-notification span {
+        font-size: 1em;
+        color: white;
+        font-weight: 600;
+        }
+    .circle-care {width: 100%;}
+    .air-message span{margin-top: 20px;}
+    .air-message {margin: auto; width: 50%;}
+    .person-card {width: 50%; margin: auto;}
+    .person-card span {font-size: 1em;}
+    .person-card-img {width: 80px; height: 80px;}
+    .send-button {width: 40%;}
+
+    .pending-button div {
+        height: 15px;
+        width: 15px;
+        left: 178px
+    }
+    .pending-button div > span {
+        line-height: 15px;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+
+
+
+
+/* @media screen and (min-width: 300px) {
+    .pending-button div {
+        left: 95px
+    }
+} */
