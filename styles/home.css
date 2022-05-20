@@ -5,24 +5,68 @@
 }
 
 
-
+/******************************************************/
+/******************************************************/
+/**************** BANNER SECTION *****************/
+/******************************************************/
+/******************************************************/
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.user {
+#user {
     display: flex;
     align-items: center;
     font-weight: 600;
 }
 
- .user img {
+#user #user-name {
+    margin-left: 10px;
+}
+
+#profile-pic {
     width: 75px;
     height: 75px;
  }
 
+ #my-user-notification {
+    display: flex;
+    width: 70px;
+    position: absolute;
+}
+
+
+#my-user-notification div{
+    background-color: #fe4f3c;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    top: -40px;
+    right: -220px;
+    border-radius: 50%;
+    margin-right: 210px;
+}
+
+#my-user-notification span {
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+}
+
+#my-user-notification div > span {
+    line-height: 30px;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+#interactive {
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+ }
 
  .settings-button {
     display: flex;
@@ -38,25 +82,33 @@ header {
     height: 31px;
  }
 
- .dots-item {
+ #dots-item {
     text-align: center;
     display: flex;
     align-items: center;
+    height: 20px;
+    margin: auto;
  }
 
- .interactive {
-    display: flex;
-    gap: 30px;
-    margin-right: 50px;
- }
- /* //////////////////////////////////////////////////////////////////// */ */
 
-/* //////////////////////////////////////////////////////////////////// */
+hr {
+    border: 1px solid #e8e8e8
+}
+
+ /* //////////////////////////////////////////////////////////////////// */
+
+
 main {
     margin: auto;
 }
 
-.app {
+/******************************************************/
+/******************************************************/
+/**************** APP MENU SECTION *****************/
+/******************************************************/
+/******************************************************/
+
+#app {
     display: flex;
     flex-wrap: wrap;
     column-gap: 54.5px;
@@ -64,7 +116,6 @@ main {
     width: 1000px;
     align-items: center;
     margin: auto;
-
  }
 
  .app-options {
@@ -76,11 +127,16 @@ main {
     border: 1px solid #cccfd6;
  }
 
+ .app-main {
+    display: flex;
+    align-items: center;
+ }
+
  .app-options:hover {
      cursor: pointer;
  }
 
- .app-main span {
+.app-main span {
     font-size: 1.29em;
     margin-left: 10px;
     margin-top: 50px;
@@ -88,29 +144,11 @@ main {
     color: #868686;
  }
 
- .dail2 {
-     margin-right: auto;
+ .app-main img {
+    margin-left: 20px;
+    width: 113px;
+    height: 113px;
  }
-
-
-.app-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* .notification {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    background-color: red;
-    text-align: center;
-    position: absolute;
-    left: 29.8%;
-    color: white;
-} */
-
-
 
  .top-left {
     width: 13px;
@@ -120,41 +158,34 @@ main {
     display: inline;
  }
 
- .my-user-notification {
+ .bottom-right {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+#my-points {
     display: flex;
-    width: 70px;
+    width: 295px;
     position: absolute;
 }
 
-
-.my-user-notification div{
-    background-color: #fe4f3c;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    position: absolute;
-    top: -40px;
-    right: -220px;
-    border-radius: 50%;
-    margin-right: 210px;
-}
-
-.my-user-notification span {
-    font-size: 1em;
-    color: white;
-    font-weight: 600;
-}
-
-.my-user-notification div > span {
-    line-height: 30px;
+#my-points div > span {
+    line-height: 33px;
     vertical-align: middle;
     font-weight: 600;
 }
 
-.my-points {
-    display: flex;
-    width: 295px;
+#my-points div {
+    background-color: #fe4f3c;
+    color: white;
+    width: 180px;
+    height: 33px;
+    text-align: center;
     position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 .my-notification {
@@ -162,8 +193,6 @@ main {
     width: 295px;
     position: absolute;
 }
-
-
 
 .my-notification div{
     background-color: #fe4f3c;
@@ -190,81 +219,72 @@ main {
     vertical-align: middle;
     font-weight: 600;
 }
+/* /////////////////////////////////////////////////////////// */
 
 
-.my-points div > span {
-    line-height: 33px;
-    vertical-align: middle;
-    font-weight: 600;
+/******************************************************/
+/******************************************************/
+/**************** DIVIDERS *****************/
+/******************************************************/
+/******************************************************/
+
+.divider-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color:#dfe0e5;
+
 }
 
-.my-points div {
-    background-color: #fe4f3c;
-    color: white;
-    width: 180px;
-    height: 33px;
-    text-align: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
+.divider-container span {
+    font-size: x-large;
+    align-self: center;
+    /* margin-right: 100px; */
+    color: #868686;
 }
 
 
- .bottom-right {
-    width: 18px;
-    height: 18px;
+.divider-container-images {
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+#reminder-dates {
+    display: flex;
     margin-left: auto;
-    margin-top: auto;
-}
-
- .app-main {
-    display: flex;
-    align-items: center;
- }
-
- .app-main img {
-    margin-left: 20px;
-    width: 113px;
-    height: 113px;
- }
-
-
-
-
-.divider {
-    display: flex;
+    margin-right: 40px;
 
 }
 
-.divider img {
+#reminder-dates img  {
+    opacity: .4;
     width: 30px;
     height: 30px;
-    display: inline;
-    margin-left: 35px;
-    margin-right: 30px;
+    align-self: center;
+}
+
+#reminder-dates img:nth-child(3) {
+    margin-left: 10px;
 }
 
 /* /////////////////////////////////////////////////////////// */
 
 
-/* /////////////////////////////////////////////////////////// */
-
-
-
-/* /////////////////////////////////////////////////////////// */
-#alerts-messaging-container{
-    width: 1000px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-
-}
+/*************************************************************/
+/*************************************************************/
+/**************** ALERTS AND MESSAGES (BUTTONS) SECTION *****************/
+/*************************************************************/
+/*************************************************************/
 
 #alerts-messaging-container-buttons {
     width: 1000px;
     margin: auto;
     display: grid;
-    grid-template-columns: 3.5% 15% 8% 8% auto;
+    grid-template-columns: 2% 15% 8% 8% auto;
     border: 1px solid rgb(204, 203, 203);
 
 }
@@ -288,102 +308,12 @@ main {
 #inbox {
     background-color: #ffffff;
     width: 100%;
-
 }
 
-#sent {
-    background-color: #e6e6e6;
-}
-
-
-
-
-/* #alerts-messaging-container-buttons button:nth-child(4) {
-    background-color: #e6e6e6;
-    width: 80px;
-    border: 1px solid #cccfd6;
-} */
-
-.alerts-messaging-container-previously span{
-    display: flex;
-    width: 190px;
-    font-size: 0.9em;
-    justify-content: center;
-    color: #949899;
-    font-weight: 600;
-}
-
- .email-notification {
-        display: flex;
-        position: absolute;
-        margin-left: 250px;
-    }
-.email-notification span {
-
-    background-color: #fe4f3c;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    position: absolute;
-    margin: auto;
-    /* top: -13px;
-    left: 200px; */
-    color: white;
-    font-weight: 600;
-    margin-right: 100px;
-    border-radius: 50%;
-
-}
-
-
-/* .email-notification span {
-    font-size: 1em;
-    color: white;
-    font-weight: 600;
-} */
-
-/* .email-notification div > span {
-    line-height: 30px;
-    vertical-align: middle;
-    font-weight: 600;
-} */
-
-
-.pending-notification {
-    display: flex;
-    position: absolute;
-    height: 200px;
-}
-
- .pending-notification div {
-    background-color: #fe4f3c;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border-radius: 50%;
-    margin-right: -270px;
-    margin-top: 15px;
-}
-
-
-.pending-notification span {
-font-size: 0.8em;
-color: white;
-font-weight: 600;
-}
-
-.pending-notification div > span {
-line-height: 20px;
-vertical-align: middle;
-font-weight: 600;
-}
 
 .check-all {
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: -3px;
     display: inline;
     border-radius: 5%;
 }
@@ -400,17 +330,20 @@ font-weight: 600;
     background-position: 90% 50%;
     border: 1px solid #cccfd6;
 }
-/* //////////////////////////////////////////////////////////// */
+/*************************************************************/
 
 
-
-/* //////////////////////////////////////////////////////// */
+/*************************************************************/
+/*************************************************************/
+/**************** ALERTS AND MESSAGES (CONTACT) SECTION *****************/
+/*************************************************************/
+/*************************************************************/
 .alerts-messaging-container-person {
     width: 1000px;
     margin: auto;
     display: grid;
     align-content: flex-end;
-    grid-template-columns: 3.5% 1% 20% auto 20% 5%;
+    grid-template-columns: 2% 1% 20% auto 20% 5%;
     border: 1px solid rgb(204, 203, 203);
     gap: 2%;
 }
@@ -424,8 +357,6 @@ font-weight: 600;
 .contact-name {
     color: #656565;
     font-weight: 600;
-    /* margin-left: -20px;
-    margin-right: 60px; */
 }
 
 .date {
@@ -455,9 +386,65 @@ font-weight: 600;
     border-radius: 50%;
 
 }
-/* ////////////////////////////////////////////////////////////// */
 
-/* /////////////////////////////////////////////////////////////////// */
+.not-selected {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(179, 178, 178);
+    border-radius: 50%;
+}
+
+.email-notification {
+    display: flex;
+    position: absolute;
+    margin-left: 250px;
+}
+.email-notification span {
+    background-color: #fe4f3c;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    /* top: -13px;
+    left: 200px; */
+    color: white;
+    font-weight: 600;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+
+
+    /* .email-notification span {
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    } */
+
+    /* .email-notification div > span {
+    line-height: 30px;
+    vertical-align: middle;
+    font-weight: 600;
+    } */
+
+/*************************************************************/
+
+#alerts-messaging-container-previously span{
+    display: flex;
+    width: 190px;
+    font-size: 0.9em;
+    justify-content: center;
+    color: #949899;
+    font-weight: 600;
+}
+/* //////////////////////////////////////////////////////////// */
+
+
+/*************************************************************/
+/*************************************************************/
+/**************** ALERTS AND MESSAGES (EMAIL) SECTION *****************/
+/*************************************************************/
+/*************************************************************/
 
 .alerts-messaging-container-email {
     width: 1000px;
@@ -511,14 +498,14 @@ font-weight: 600;
 
 /* ////////////////////////////////////////////////////////////////////// */
 
-.alerts-messaging-container-previously {
+#alerts-messaging-container-previously {
     width: 1000px;
     margin: auto;
     border: 1px solid rgb(204, 203, 203);
     align-items: center;
 }
 
-.alerts-messaging-container-previously span {
+#alerts-messaging-container-previously span {
     background-color: #dfdcdc;
     height: 50px;
     margin-left: auto;
@@ -531,53 +518,20 @@ font-weight: 600;
 /* ////////////////////////////////////////////////////////////////////// */
 
 /* /////////////////////////////////////////////////////////////////////////// */
-.divider-container {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background-color:#dfe0e5;
-
-}
-
-.divider-container span {
-    font-size: x-large;
-    align-self: center;
-    /* margin-right: 100px; */
-    color: #868686;
-}
 
 
-.divider-container-images {
-    width: 50px;
-    height: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-
-}
-
-#reminder-dates {
-    display: flex;
-    margin-left: auto;
-    margin-right: 40px;
-
-}
-
-#reminder-dates img  {
-    opacity: .4;
-    width: 30px;
-    height: 30px;
-    align-self: center;
-}
-
-#reminder-dates img:nth-child(3) {
-    margin-left: 10px;
-}
 
 /* ////////////////////////////////////////////////////////////////////////// */
 
 /* ////////////////////////////////////////////////////////////////////////////// */
 
-.reminders {
+
+/*************************************************************/
+/*************************************************************/
+/**************** REMINDER CALENDAR SECTION *****************/
+/*************************************************************/
+/*************************************************************/
+#reminders {
     display: flex;
     justify-content: center;
     border: 1px solid #c7ced4;
@@ -585,23 +539,27 @@ font-weight: 600;
     margin: auto;
 }
 
-.first-reminder {
+#first-reminder {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 
 }
 
-.second-reminder {
+#second-reminder {
     display: flex;
     flex-direction: column;
 
 }
-
 /* ///////////////////////////////////////////////////////////////////////////////// */
 
-/* ////////////////////////////////////////////////////////////////////////////// */
-.calendar-date-container {
+
+/*************************************************************/
+/*************************************************************/
+/**************** REMINDER (REMINDER) SECTION *****************/
+/*************************************************************/
+/*************************************************************/
+#calendar-date-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -609,41 +567,32 @@ font-weight: 600;
     flex-direction: column;
 }
 
-.calendar-date-container span:nth-child(1) {
+#calendar-date-container span:nth-child(1) {
     font-size: 2em;
     color: #8e9396;
     font-weight: 600;
 }
 
-.calendar-date-container span:nth-child(2) {
+#calendar-date-container span:nth-child(2) {
     color: #8e9396;
     font-size: 1.5em;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-
-
-
-/* //////////////////////////////////////////////////////////////////////////////// */
 .actual-date {
     font-size: 2em;
 }
-/* //////////////////////////////////////////////////////////////////////////////// */
 
-
-
-/* //////////////////////////////////////////////////////////////////////////////// */
 .contact-container {
     height: 70px;
     width: 400px;
     background-color: #ff503d;
     color: white;
-    margin: 22px;
+    margin: auto;
     display: flex;
 }
 
 
-.quit {
+#close-remainder{
     border: none;
     outline: none;
     background-color: #eb3f3f;
@@ -689,66 +638,54 @@ font-weight: 600;
     color: white;
     font-size: 1em;
 }
-
-/* .contact-container span:nth-child(2) {
-    color: white;
-    font-size: 1.2em;
-    margin-left: 40px;
-}
-
-.contact-container span:nth-child(4) {
-    color: white;
-    margin-left: 40px;
-    margin-top: -30px;
-} */
 /* ////////////////////////////////////////////////////////////////// */
 
 
-/* ////////////////////////////////////////////////////////////////// */
-.reminder-specification {
+/*************************************************************/
+/*************************************************************/
+/**************** REMINDER (REMINDER) SECTION *****************/
+/*************************************************************/
+/*************************************************************/
+#reminder-specification {
     background-color: #e3e3e3;
-    width: 400px;
     margin: auto;
-    margin-top: -25px;
     display: flex;
     flex-direction: column;
 }
 
-.reminder-specification h4 {
+#reminder-specification h4 {
     display: inline;
     font-size: 1.3em;
 }
 
-.reminder-specification p {
+#reminder-specification p {
     width: 300px;
     margin-left: 30px;
 
 }
 
-.reminder-date-info {
+#reminder-specification .reminder-date-info {
     margin-top: 10px;
     margin-bottom: 1px;
     margin-left: 30px;
 
 }
 
-.reminder-date-info span, h4, p {
+#reminder-specification .reminder-date-info span, h4, p {
     color: #626264;
 }
 
 .reminder-specification p {
     margin-top: 7px;
 }
-/* ////////////////////////////////////////////////////////////////// */
 
-/* ////////////////////////////////////////////////////////////////// */
-.reminder-buttons {
+#reminder-specification .reminder-buttons {
     display: flex;
     justify-content: center;
 
 }
 
-.reminder-buttons button:nth-child(1) {
+#reminder-specification .reminder-buttons #change {
     background-color: #00dabf;
     height: 30px;
     width: 80px;
@@ -763,7 +700,7 @@ font-weight: 600;
     color: #017d75;
 }
 
-.reminder-buttons button:nth-child(2) {
+#reminder-specification .reminder-buttons #done {
     background-color: #ff503d;
     height: 30px;
     width: 70px;
@@ -778,18 +715,22 @@ font-weight: 600;
 }
 /* ////////////////////////////////////////////////////////////////// */
 
-/* ///////////////////////////////////////////////////////////////////////// */
 
-.actual-month {
+/*************************************************************/
+/*************************************************************/
+/**************** REMINDER CALENDAR (CALENDAR) SECTION *****************/
+/*************************************************************/
+/*************************************************************/
+
+#second-reminder #actual-month {
 
     display: flex;
     height: 57px;
-    margin-top: 10px;
-    margin-bottom: 23px;
+    margin-top: -7px;
 }
 
 
-.actual-month span {
+#actual-month span {
     font-size: 2em;
     color: #929b9a;
     font-weight: 600;
@@ -798,7 +739,7 @@ font-weight: 600;
     margin-bottom: auto;
 }
 
-.actual-month button {
+#actual-month button {
     font-size: 2em;
     opacity: .4;
     background-color: #ffffff;
@@ -809,44 +750,45 @@ font-weight: 600;
     align-self: center;
 }
 
-.actual-month button:nth-child(1) {
+#actual-month button:nth-child(1) {
     margin-right: auto;
 }
 
-.actual-month button:nth-child(2) {
+#actual-month button:nth-child(2) {
     margin-left: auto;
 }
 
-
-
-  .weekdays {
+#weekdays {
     background-color: #00dabf;
     height: 55px;
 }
 
-  .weekdays li {
+  #weekdays li {
     display: inline-block;
     width: 12%;
     color: #666;
     text-align: center;
     line-height: 54px;
+    font-size: 1.5em;
   }
 
-  .days {
+  #days {
       background-color: white;;
   }
 
-  .days li {
+  #days li {
     list-style-type: none;
     display: inline-block;
     width: 12%;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1em;
+    font-size: 1.5em;
+    font-weight: 400;
     color: #777;
+
   }
 
-  .days li .active {
+  #days li .active {
     /* padding: 5px;
     border-radius: 50%;
     background: #fb4e3d;
@@ -862,32 +804,25 @@ font-weight: 600;
     margin: auto;
   }
 
-  .days li .active.transparency {
+  #days li .active.transparency {
         opacity: 0.8;
         border: none;
   }
-
-.month-list {
-    margin: 0;
-    background-color: #00dabf;
-}
-
-.month-list li {
-    display: inline-block;
-    color: white;
-}
-
 /* ///////////////////////////////////////////////////////////////////////// */
 
-/* ////////////////////////////////////////////////////////////////// */
 
-.circle-buttons-container {
+/*************************************************************/
+/*************************************************************/
+/**************** CIRCLE OF CARE SECTION *****************/
+/*************************************************************/
+/*************************************************************/
+#circle-buttons-container {
     width: 1000px;
     margin: auto;
     display: flex;
 }
 
-.circle-buttons-container button {
+#circle-buttons-container button {
     height:50px;
     cursor:pointer;
     text-align: center;
@@ -901,18 +836,18 @@ font-weight: 600;
 
 }
 
-.circle-buttons-container button:nth-child(2) {
+#circle-buttons-container #button-circle-care {
     border-bottom-style: inset;
     border-bottom-color: #fc533e;
     border-bottom-width: 5px;
 }
 
-.pending-button {
+#pending-button {
     display: flex;
     position: absolute;
 }
 
-.pending-button div {
+#pending-button div {
     background-color: #fe4f3c;
     color: white;
     height: 20px;
@@ -925,15 +860,18 @@ font-weight: 600;
     border-radius: 50%;
 }
 
-.pending-button div > span {
+#pending-button div > span {
     line-height: 20px;
     vertical-align: middle;
 }
-
 /* ////////////////////////////////////////////////////////////////// */
 
-/* ////////////////////////////////////////////////////////////////// */
-.circle-care {
+/*************************************************************/
+/*************************************************************/
+/**************** CIRCLE OF CARE (CONTACTS) SECTION *****************/
+/*************************************************************/
+/*************************************************************/
+#circle-care {
     width: 1000px;
     margin: auto;
     display: flex;
@@ -943,7 +881,7 @@ font-weight: 600;
     gap: 30px
 }
 
-.air-message {
+#air-message {
     width: 30%;
     text-align: center;
     margin: auto;
@@ -954,19 +892,15 @@ font-weight: 600;
     align-items: center;
 }
 
-.air-message span {
+#air-message span {
     line-height: 30px;
     vertical-align: middle;
 }
 
-.air {
+#air {
     width: 100%;
     margin-bottom: 10px;
 }
-
-/* //////////////////////////////////////////////////////////////////// */
-
-/* //////////////////////////////////////////////////////////////////// */
 
 .person-card {
     width: 340px;
@@ -983,8 +917,8 @@ font-weight: 600;
     margin-right: 65px;
 }
 
-.circle-care .person-card:nth-child(3),
-.circle-care .person-card:nth-child(6) {
+#circle-care .person-card:nth-child(3),
+#circle-care .person-card:nth-child(6) {
     border-left-color: #00ffe1;
 }
 
@@ -1003,13 +937,6 @@ font-weight: 600;
     font-size: 1.24em;
 }
 
-/* .person-card h4 {
-    background-color: #009e90;
-    height: 20px;
-    width: 290px;
-    font-size: 1.3em;
-
-} */
 
 .send-button {
     height: 40px;
@@ -1026,8 +953,8 @@ font-weight: 600;
     position: relative;
 }
 
-.circle-care .person-card:nth-child(3) button,
-.circle-care .person-card:nth-child(6) button {
+#circle-care .person-card:nth-child(3) button,
+#circle-care .person-card:nth-child(6) button {
     background-color: #02dbc0;
     color: #006e68;
 }
@@ -1040,8 +967,7 @@ font-weight: 600;
 
 }
 
-
-  .person-card-img {
+.person-card-img {
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -1052,440 +978,296 @@ font-weight: 600;
     margin-top: 50px;
 
 }
-
-/* //////////////////////////////////////////////////////////////////// */
-
-.close {
-    background-color: #82281f;
-    height: 20px;
-    width: 20px;
-    color: white;
-    text-align: center;
-    float: right;
-}
-/* //////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////// */
 
 
+@media screen and (min-width: 360px) and (max-width: 599px) {
 
-.alerts-messaging-item {
-    border: 1px solid #e8e8e8;
-}
-
-hr {
-    border: 1px solid #e8e8e8
-}
-
-.alerts-messaging-item button {
-    height:35px;
-    cursor:pointer;
-    text-align: center;
-    border: none;
-    outline: none;
-    background-color: white;
-    font-size: 1em;
-    height: 50px;
-}
-
-.alerts-messaging-item button:nth-child(4),
-.alerts-messaging-item button:nth-child(3) {
-    width: 60px;
-}
-
-
-.alerts-messaging-item button:nth-child(2) {
-    color: white;
-    background-color: #ff503d;
-}
-
-.alerts-messaging-item button:nth-child(4) {
-    background-color: #e6e6e6;
-}
-
-#search {
-    display: inline;
-    margin-top: 11px;
-    float: right;
-    align-self: baseline;
-    margin-right: 30px;
-}
-
-#alerts-messaging-search {
-    height: 23px;
-
-}
-
-.check {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline;
-    border-radius: 5%;
-    /* border: 1px solid #ff503d; */
-}
-
-
-.not-selected {
-    height: 10px;
-    width: 10px;
-    background-color: rgb(179, 178, 178);
-    border-radius: 50%;
-}
-
-
-.email-name {
-    color: #656565;
-    /* margin-right: 30px; */
-}
-
-.email-title {
-    /* float: left */
-    margin-left: 60px;
-}
-
-
-.details {
-    float: right;
-}
-
-.details button {
-    height: 100%;
-    margin-left: 50px;
-    margin-right: 30px;
-}
-
-.email {
-    background-color: #f8f8f8;
-}
-
-.email p, h3 {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-
-
-
-#messages-remaining {
-    display: flex;
-    float: right;
-    margin-right: 30px;
-    background-color: #dfdcdc;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-#messages-remaining span {
-    color: #949899;
-}
-
-.calendar-container {
-    display: flex;
-}
-
-.calendar-left-container {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid red;
-    margin-left: 440px;
-}
-
-
-.reminder-contact {
-    height: 60px;
-    width: 400px;
-    background-color: #ff503d;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.reminder-contact span {
-    color: white;
-    font-size: 1.2em;
-}
-
-.reminder-contact span:nth-child(4) {
-    font-size: 0.9em;
-    margin-left: 35px
-}
-
-.reminder-contact img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    margin-top: 5px;
-    display: inline;
-}
-
-.reminder-descript {
-    height: 60px;
-    width: 400px;
-    background-color: #ff503d;
-    justify-content: center;
-}
-
-.reminder-descript span {
-    color: white;
-    font-size: 1.2em;
-}
-
-.reminder-descript span:nth-child(5) {
-    font-size: 0.9em;
-    margin-left: 35px
-}
-
-.reminder-descript img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    margin-top: 5px;
-    display: inline;
-}
-/*  */
-@media screen and (min-width: 360px) and (max-width: 600px) {
+ /*//////////////////Everything related to HEADER////////////////////////// */
 
     header {
-        justify-content: space-between;
-        flex-direction: column;
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    #logo {width: 50%; height: 100%; display: flex; margin: auto;}
-    .interactive {margin: auto; ;}
-    #profile-pic {width: 60px; height: 60px}
-    .my-user-notification div {
-        margin-right: 225px;
-        top: -34px;
+    #logo {width: 100%; height: 100%; display: flex; margin: auto;}
+
+    #interactive {gap: 20px;}
+
+    #user-name {display: none;}
+
+    #profile-pic {width: 40px; height: 40px;}
+    #my-user-notification div {
+        margin-right: 240px;
+        top: -27px;
         text-align: center;
         height: 25px;
         width: 25px;
         font-size: 0.9em;
     }
+    #my-user-notification div > span {line-height: 25px;}
 
-    .my-user-notification div > span {line-height: 25px;}
+    .settings-button span {display: none;}
 
-
-    .dots-item  {display: none;}
+    #dots-item  {display: none;}
     /* .user span:nth-child(3) {display: none;} */
+/* //////////////////////////////////////////////////////////// */
 
 
-    .app {
+ /*//////////////////Everything related to APP MENU///////////////////////// */
+
+    #app {
         width: 100%;;
         row-gap: 10px;
         margin: auto;
     }
 
     .app-options {margin: auto;}
+/* //////////////////////////////////////////////////////////// */
 
 
-    #alerts-messaging-container-buttons{
-        width: 100%;
-        grid-template-columns: 8% 30% 25% 20% 15%;
 
-    }
+ /*//////////////////Everything related to ALERTS AND MESSAGES///////////////////////// */
 
-    .alerts-messaging-container-person {
-        width: 100%;
-        grid-template-columns: 8% 3% 20% 22% 20% 5%;
-    }
+    #alerts-messaging-container-buttons {width: 100%; grid-template-columns: 5% 35% 15% 15% 25.5%;}
 
     .check-all {
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
         margin: auto;
+        margin-left: 5px;
     }
+
+    .alerts-messaging-container-person {width: 100%; grid-template-columns: 5% 3% 20% 22% 20% 5%;}
+    .alerts-messaging-container-person span {font-size: 0.9em;}
 
     .date {margin-left: 0;}
 
-    .alerts-messaging-container-person span {font-size: 0.9em;}
 
-    .alerts-messaging-container-previously,
-    .alerts-messaging-container-previously span,
-    .alerts-messaging-container-email,
-    #search-bar {
+    #alerts-messaging-container-previously,
+    #alerts-messaging-container-previously span {
         width: 100%;
     }
 
+    #search-bar { width: 100%; margin-left: 6px;
+    }
+
+    .alerts-messaging-container-email {width: 100%;}
     .alerts-messaging-container-email p,
     .alerts-messaging-container-email h3{
         width: 95%;
         margin-left: 10px;
     }
-
     .email-controller {margin-right: 50px;}
+/* //////////////////////////////////////////////////////////// */
 
-    .reminders {flex-direction: column; width: 100%;}
-    .first-reminder {align-items: center;}
+    #second-reminder {margin-top: 20px;} /* This media is just to separate calendar actual DATE from the TOP REMINDER*/
+
+ /*//////////////////Everything related to CIRCLE OF CARE///////////////////////// */
+    #reminders {flex-direction: column; width: 100%;}
+    #first-reminderm #second-reminder {align-items: center; width: 100%; margin: auto;}
     .contact-container, .reminder-specification {width: 100%;}
 
-    .first-reminder, .second-reminder {
-        width: 100%;
-        margin: auto;
-    }
-    /* .weekdays, .days {width: 91%; margin: auto;} */
-
-    .weekdays ul {width: 100%;}
-
-    .weekdays li, .days li {
+    #weekdays ul {width: 100%;}
+    #weekdays li, #days li {
         font-size: 1.4em;
     }
 
-    .circle-buttons-container {
+    #circle-buttons-container {
         width: 100%;
         justify-content: center;
         font-size: 0.7em;
     }
-    .pending-button div {
+    #circle-care {width: 100%; justify-content: center;}
+
+    #pending-button div {
         height: 15px;
         width: 15px;
         left: 95px
     }
-    .pending-button div > span {
+    #pending-button div > span {
         line-height: 15px;
         vertical-align: middle;
     }
-    .circle-care {width: 100%; justify-content: center;}
-    .air-message {width: 90%;}
+
+    #air-message {width: 90%;}
     .person-card span {font-size: 1em; width: 80%; margin-left: auto;}
     .person-card-img {width: 80px; height: 80px; margin-top:40px;
     }
     .person-card {width: 100%; margin: auto;}
     .send-button {width: 50%;}
+/* //////////////////////////////////////////////////////////// */
 
+
+
+ /*//////////////////Everything related to DIVIDER///////////////////////// */
     .divider-container {
         height: 35px;
     }
-
-    .divider-container span {font-size: 1em; }
+    .divider-container span {font-size: 0.9em;}
     .divider-container-images {
         width: 30px;
         height: 30px;
         margin-top: auto;
         margin-bottom: auto;
-        margin-right: 30px;
+        margin-left: 0px;
+        margin-right: 10px;
     }
 
-    #reminder-dates img{
+
+    #reminder-dates {
+        display: flex;
+        margin-left: 60px;
+        display: none;
+   }
+/*
+   #reminder-dates span {
+       margin-right: 25px;
+       font-size: 0.75em;
+   }
+
+    #reminder-dates img  {
+        opacity: .4;
         width: 20px;
         height: 20px;
-        margin-left: auto;
+        align-self: center;
+        margin-left: 0px;
+    }
+    #reminder-dates img:nth-child(3) {
+        margin-left: 0px;
     }
 
-    #reminder-dates span {
-        font-size: 0.7em;
+    #reminder-dates img:nth-child(2) {
+        margin-left: -40px;
     }
+
+
+    #second-reminder #actual-month {
+        margin-top: 7px;
+    } */
 }
 
 @media screen and (min-width: 420px) and (max-width: 548px) {
 
 
-    .pending-button div {
+    #pending-button div {
         height: 15px;
-        width: 15px;
+        width: 15px;                 /* This media is just for pending button red circle adjustment */
         left: 118px
     }
-    .pending-button div > span {
+    #pending-button div > span {
         line-height: 15px;
         vertical-align: middle;
     }
 }
 
 @media  screen and (min-width: 550px) and (max-width: 599px) {
-    .pending-button div {
+    #pending-button div {
         height: 15px;
         width: 15px;
-        left: 160px
+        left: 160px                     /* This media is just for pending button red circle adjustment */
     }
-    .pending-button div > span {
+    #pending-button div > span {
         line-height: 15px;
         vertical-align: middle;
     }
 
-    .person-card-img {width: 100px; height: 100px; margin-top:20px;
-    }
+    .person-card-img {width: 100px; height: 100px; margin-top:20px;}    /* This media is just for img ajustment */
 
-    .alerts-messaging-container-person {
-        grid-template-columns: 8% 1.5% 20% 22% 20% 5%;
-    }
+    .alerts-messaging-container-person {grid-template-columns: 8% 1.5% 20% 22% 20% 5%;}
 
 }
 
 @media screen and (min-width: 600px) and (max-width:799px) {
 
+ /*//////////////////Everything related to HEADER////////////////////////// */
     header {justify-content: space-around;}
     #logo {width: 50%;}
     #profile-pic {width: 75px; height: 75px;}
+ /*/////////////////////////////////////////// */
 
+
+
+/*//////////////////Everything related to APP////////////////////////// */
+#app {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+/*/////////////////////////////////////////// */
+
+
+
+
+ /*//////////////////Everything related to ALERTS AND MESSAGES////////////////////////// */
     .check-all {
         width: 15px;
         height: 15px;
         margin: auto;
     }
 
-    #alerts-messaging-container-buttons{
-        width: 100%;
-        grid-template-columns: 8% 30% 25% 20% 15%;
-    }
+    #alerts-messaging-container-buttons{width: 100%; grid-template-columns: 8% 30% 15% 15% 25%;}
 
-    .alerts-messaging-container-previously,
-    .alerts-messaging-container-previously span,
-    .alerts-messaging-container-email,
-    #search-bar {
-        width: 100%;
-    }
 
-    .alerts-messaging-container-person {
-        width: 100%;
-        grid-template-columns: 5.5% 1.5% 20% 20% 30% 3%;
-    }
+    .alerts-messaging-container-person {width: 100%; grid-template-columns: 8% 1.5% 20% 22% 30% 5%;}
 
-    .pending-button div {
-        height: 15px;
-        width: 15px;
-        left: 170px
-    }
-    .pending-button div > span {
-        line-height: 15px;
-        vertical-align: middle;
-    }
+    .alerts-messaging-container-email {width: 100%;}
 
-    .circle-buttons-container {
-        width: 100%;
-        justify-content: center;
-        font-size: 0.7em;
-    }
-
-    .alerts-messaging-container-person {
-        grid-template-columns: 8% 1.5% 20% 22% 30% 5%;
-    }
-
-    .reminders {
-        flex-direction: column;
-        align-items: center;
+    #alerts-messaging-container-previously,
+    #alerts-messaging-container-previously span {
         width: 100%;
     }
 
-    .app {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: auto;
-        align-items: center;
-    }
+    #search-bar {margin-left: 20px; width: 100%;}
+/*/////////////////////////////////////////// */
 
-    .circle-care {width: 100%; justify-content: center;}
-    .air-message {width: 90%;}
-    .person-card span {font-size: 1em; width: 80%; margin-left: auto;}
-    .person-card-img {width: 80px; height: 80px; margin-top:40px;
-    }
-    .person-card {width: 100%; margin: auto;}
-    .send-button {width: 50%;}
+
+
+ /*//////////////////Everything related to CIRCLE OF CARE////////////////////////// */
+ #reminders {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+/*/////////////////////////////////////////// */
+
+
+ /*//////////////////Everything related to CIRCLE OF CARE////////////////////////// */
+    #circle-care {width: 100%; justify-content: center;}
+        #air-message {width: 90%;}
+        .person-card span {font-size: 1em; width: 80%; margin-left: auto;}
+        .person-card-img {width: 80px; height: 80px; margin-top:40px;}
+        .person-card {width: 100%; margin: auto;}
+        .send-button {width: 50%;}
+
+        #pending-button div {
+            height: 15px;
+            width: 15px;
+            left: 170px
+        }
+        #pending-button div > span {
+            line-height: 15px;
+            vertical-align: middle;
+        }
+
+        #circle-buttons-container {
+            width: 100%;
+            justify-content: center;
+            font-size: 0.7em;
+        }
+
+        #second-reminder {margin-top: 30px;} /* This media is just to separate calendar actual DATE from the TOP REMINDER*/
+
 }
 
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
+
+/*//////////////////Everything related to HEADER////////////////////////// */
     header {justify-content: space-around;}
     #logo {width: 50%;}
     #profile-pic {width: 75px; height: 75px;}
@@ -1498,74 +1280,46 @@ hr {
         font-size: 0.9em;
     }
     .my-user-notification div > span {line-height: 25px;}
+/*//////////////////////////////////////////// */
 
 
-    .app {
+
+/*//////////////////Everything related to MAIN APP////////////////////////// */
+    #app {
         width: 100%;
         flex-wrap: wrap;
         gap: 10px;
         margin: auto;
         align-items: center;
     }
+/*//////////////////////////////////////////// */
 
 
-    #alerts-messaging-container-buttons{
-        width: 100%;
-        grid-template-columns: 5.5% 27% 23% 22% 15%;
-    }
-    .alerts-messaging-container-person {
-        width: 100%;
-        grid-template-columns: 5.5% 1.5% 20% 20% 30% 3%;
-    }
 
+/*//////////////////Everything related to ALERTS AND MESSAGES////////////////////////// */
+    #alerts-messaging-container-buttons{width: 100%;grid-template-columns: 5.5% 27% 15% 15% 30%;}
 
-    .alerts-messaging-container-email,
-    #search-bar {
-        width: 100%;
+    .alerts-messaging-container-person {width: 100%; grid-template-columns: 5.5% 1.5% 20% 20% 30% 3%;}
+
+    .alerts-messaging-container-email {width: 100%;}
+
+    #search-bar {width: 100%; margin-left: 30px;
     }
 
-    .check-all {
-        width: 15px;
-        height: 15px;
-        margin: auto;
-    }
+    .check-all {width: 15px; height: 15px; margin: auto;}
 
-    #search-bar {
-        margin-left: 30px
-    }
+    .email-notification {margin-left: 490px; height: 30px; width: 30px;}
 
-    .email-notification  {
-        margin-left: 490px;
-        height: 30px;
-        width: 30px;
-    }
-
-    .alerts-messaging-container-previously {
-        width: 100%;
-    }
-
-    .alerts-messaging-container-previously span {
-        width: 30%;
-    }
-
-    .reminders {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    /* .reminders {flex-direction: column; width: 100%;}
-    .first-reminder {align-items: center;}
-    .contact-container, .reminder-specification {width: 100%;}
+    #alerts-messaging-container-previously {width: 100%;}
+    #alerts-messaging-container-previously span {width: 30%;}
+/*//////////////////////////////////////////// */
 
 
-    .calendar {width: 100%;;}
-    .weekdays ul, .days ul {width: 100%;}
 
-    .divider-container {
-        height: 35px;
-    } */
+#reminders {flex-direction: column;align-items: center;width: 100%;} /* This media is for change the directionn of flex items*/
 
+
+/*//////////////////Everything related to DIVIDERS////////////////////////// */
     .divider-container span {font-size: 1em; }
     .divider-container-images {
         width: 30px;
@@ -1574,49 +1328,35 @@ hr {
         margin-bottom: auto;
         margin-right: 30px;
     }
+/*//////////////////////////////////////////// */
 
-    .circle-buttons-container {
+
+
+/*//////////////////Everything related to CIRCLE OF CARE////////////////////////// */
+    #circle-buttons-container {
         width: 100%;
         justify-content: center;
         font-size: 0.7em;
     }
-    .pending-notification div {
-        margin-right: -185px;
-        margin-top: 15px;
-    }
-    .pending-notification span {
-        font-size: 1em;
-        color: white;
-        font-weight: 600;
-        }
-    .circle-care {width: 100%;}
-    .air-message span{margin-top: 20px;}
-    .air-message {margin: auto; width: 50%;}
+    #circle-care {width: 100%;}
+    #air-message span{margin-top: 20px;}
+    #air-message {margin: auto; width: 50%;}
     .person-card {width: 50%; margin: auto;}
     .person-card span {font-size: 1em;}
     .person-card-img {width: 80px; height: 80px;}
     .send-button {width: 40%;}
 
-    .pending-button div {
+    #pending-button div {
         height: 15px;
         width: 15px;
         left: 178px
     }
-    .pending-button div > span {
+    #pending-button div > span {
         line-height: 15px;
         vertical-align: middle;
     }
+
+    #second-reminder {margin-top: 40px;} /* This media is just to separate calendar actual DATE from the TOP REMINDER*/
+
 }
-
-
-
-
-
-
-
-
-/* @media screen and (min-width: 300px) {
-    .pending-button div {
-        left: 95px
-    }
-} */
+/*//////////////////////////////////////////// */

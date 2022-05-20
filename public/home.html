@@ -16,290 +16,286 @@
 
 <body>
     <header>
-            <img id="logo" src="../images/logo-easy-connect_SBS.png" alt="myEasyConnect">
+        <img id="logo" src="../images/logo-easy-connect_SBS.png" alt="myEasyConnect">
 
-            <div class="interactive">
-                <div class="user">
-                        <div class="my-user-notification"><div><span>6</span></div></div>
-                        <img id="profile-pic" src="../images/senior.png" alt="profilePicture">
-                        <span>Cordelia Zaratustra</span>
+        <div id="interactive">
+
+            <div id="user">
+                <div id="my-user-notification">
+                    <div><span>6</span></div>
                 </div>
-
-
-                <div class="settings-button">
-                    <img src="../images/config.png" alt="config">
-                    <span>SETTINGS</span>
-                </div>
-
-                <div class="dots-item">
-                    <img src="../images/dot3.png" alt="dot">
-                </div>
-
-                <div class="settings-button">
-                    <img src="../images/1419365876_on-off.png" alt="on-off">
-                    <span>LOGOUT</span>
-                </div>
+                <img id="profile-pic" src="../images/senior.png" alt="profilePicture">
+                <span id="user-name">Cordelia Zaratustra</span>
             </div>
-    </header>
 
+
+            <div class="settings-button">
+                <img src="../images/config.png" alt="config">
+                <span>SETTINGS</span>
+            </div>
+
+            <img id="dots-item" src="../images/dot3.png" alt="dot">
+
+            <div class="settings-button">
+                <img src="../images/1419365876_on-off.png" alt="on-off">
+                <span>LOGOUT</span>
+            </div>
+
+        </div>
+    </header>
 
     <hr>
     <br>
     <br>
 
     <main>
-        <section class="app">
-                <div class="app-options" onclick="showSection('email')">
-                    <img src="/images/Layer_2.png" class="top-left" />
-                    <div class="my-notification">
-                        <div><span>2</span></div>
-                    </div>
-                    <div class="app-main">
-                        <img src="../images/warnings-off2(1).png" alt="Alerts and messages" >
-                        <span>ALERTS AND MESSAGES</span>
-                    </div>
-                    <img src="/images/Layer_3.png" class="bottom-right">
+        <section id="app">
+
+            <div class="app-options" onclick="showSection('email')">
+                <img src="/images/Layer_2.png" class="top-left" />
+                <div class="my-notification">
+                    <div><span>2</span></div>
                 </div>
-
-                <div class="app-options" onclick="showSection('reminder-calendar')">
-                    <img src="/images/Layer_2.png" class="top-left"/>
-                    <div class="my-notification">
-                        <div><span>1</span></div>
-                    </div>
-                    <div class="app-main">
-                        <img src="../images/reminders-calendar.png" alt="Reminder Calendars" >
-                        <span>REMINDER CALENDARS</span>
-                    </div>
-                    <img src="/images/Layer_3.png" class="bottom-right">
+                <div class="app-main">
+                    <img src="../images/warnings-off2(1).png" alt="Alerts and messages">
+                    <span>ALERTS AND MESSAGES</span>
                 </div>
+                <img src="/images/Layer_3.png" class="bottom-right">
+            </div>
 
-                <div class="app-options" onclick="showSection('circle-of-care')">
-                    <img src="/images/Layer_2.png" class="top-left" />
-                    <div class="my-notification">
-                        <div><span>2</span></div>
-                    </div>
-                    <div class="app-main">
-                        <img src="../images/ties2.png" alt="warning" alt="Circle of care">
-                        <span>CIRCLE OF CARE</span>
-                    </div>
-                    <img src="/images/Layer_3.png" class="bottom-right">
+            <div class="app-options" onclick="showSection('reminder-calendar')">
+                <img src="/images/Layer_2.png" class="top-left" />
+                <div class="my-notification">
+                    <div><span>1</span></div>
                 </div>
-
-                <div class="app-options" >
-                    <img src="/images/Layer_2.png" class="top-left" />
-                    <div class="my-notification">
-                        <div><span>1</span></div>
-                    </div>
-                    <div class="app-main">
-                        <img src="../images/daily-care-o-gram.png" alt="Daily care-o-gram">
-                        <span>DAILY<br>CARE-O-GRAM</span>
-
-                    </div>
-                    <img src="/images/Layer_3.png" class="bottom-right">
+                <div class="app-main">
+                    <img src="../images/reminders-calendar.png" alt="Reminder Calendars">
+                    <span>REMINDER CALENDARS</span>
                 </div>
+                <img src="/images/Layer_3.png" class="bottom-right">
+            </div>
 
-                <div class="app-options">
-                    <img src="/images/Layer_2.png" class="top-left" />
-                    <div class="app-main">
-                        <img src="../images/casemanager.png" alt="warning">
-                        <span>REPOSITORY</span>
-                    </div>
-                    <img src="/images/Layer_3.png" class="bottom-right">
+            <div class="app-options" onclick="showSection('circle-of-care')">
+                <img src="/images/Layer_2.png" class="top-left" />
+                <div class="my-notification">
+                    <div><span>2</span></div>
                 </div>
-
-                <div class="app-options">
-                    <img src="/images/Layer_2.png" class="top-left" />
-                    <div class="app-main">
-                        <img src="../images/my-health-reports_(1).png" alt="Reports" >
-                        <span>REPORTS</span>
-                    </div>
-                    <img src="/images/Layer_3.png" class="bottom-right">
+                <div class="app-main">
+                    <img src="../images/ties2.png" alt="warning" alt="Circle of care">
+                    <span>CIRCLE OF CARE</span>
                 </div>
+                <img src="/images/Layer_3.png" class="bottom-right">
+            </div>
 
-                <div class="app-options">
-                    <img src="/images/Layer_2.png" class="top-left" />
-
-                    <div class="my-points">
-                        <div><span>Total points: 725</span></div>
-                    </div>
-                    <div class="app-main">
-                        <img src="../images/reward-points_(1).png" alt="My ponts" >
-                        <span>MY POINTS</span>
-                    </div>
-                    <img src="/images/Layer_3.png" class="bottom-right">
+            <div class="app-options">
+                <img src="/images/Layer_2.png" class="top-left" />
+                <div class="my-notification">
+                    <div><span>1</span></div>
                 </div>
-    </section>
+                <div class="app-main">
+                    <img src="../images/daily-care-o-gram.png" alt="Daily care-o-gram">
+                    <span>DAILY<br>CARE-O-GRAM</span>
 
-    <br>
-    <br>
+                </div>
+                <img src="/images/Layer_3.png" class="bottom-right">
+            </div>
 
+            <div class="app-options">
+                <img src="/images/Layer_2.png" class="top-left" />
+                <div class="app-main">
+                    <img src="../images/casemanager.png" alt="warning">
+                    <span>REPOSITORY</span>
+                </div>
+                <img src="/images/Layer_3.png" class="bottom-right">
+            </div>
 
+            <div class="app-options">
+                <img src="/images/Layer_2.png" class="top-left" />
+                <div class="app-main">
+                    <img src="../images/my-health-reports_(1).png" alt="Reports">
+                    <span>REPORTS</span>
+                </div>
+                <img src="/images/Layer_3.png" class="bottom-right">
+            </div>
 
+            <div class="app-options">
+                <img src="/images/Layer_2.png" class="top-left" />
 
-    <section id="email">
-        <div class="divider-container">
-            <img src="/images/warnings-off2(1).png" class="divider-container-images">
-            <span>ALERTS AND MESSAGES</span>
-        </div>
+                <div id="my-points">
+                    <div><span>Total points: 725</span></div>
+                </div>
+                <div class="app-main">
+                    <img src="../images/reward-points_(1).png" alt="My ponts">
+                    <span>MY POINTS</span>
+                </div>
+                <img src="/images/Layer_3.png" class="bottom-right">
+            </div>
+        </section>
 
         <br>
+        <br>
 
-        <div id="alerts-messaging-container-buttons">
-            <input type="checkbox" class="check-all">
-            <button id="new-message">New Message</button>
-            <!-- <div class="email-notification">
+        <section id="email">
+            <div class="divider-container">
+                <img src="/images/warnings-off2(1).png" class="divider-container-images">
+                <span>ALERTS AND MESSAGES</span>
+            </div>
+
+            <br>
+
+            <div id="alerts-messaging-container-buttons">
+                <input type="checkbox" class="check-all">
+                <button id="new-message">New Message</button>
+                <!-- <div class="email-notification">
                 <span>2</span>
             </div> -->
-            <button id="inbox">Inbox</button>
-            <button>Sent</button>
-            <input type="text" placeholder="Search" id="search-bar">
-        </div>
-
-        <div class="alerts-messaging-container-person">
-            <input type="checkbox" class="check-all">
-            <span class="selected"></span>
-            <span class="contact-name">Jhon Snow</span>
-            <span class="email-name">Hi Friend!!</span>
-            <span class="date">12 April 2014</span>
-            <button><img src="/images/expand_more_FILL0_wght400_GRAD0_opsz48.png" ></button>
-        </div>
-
-         <div class="alerts-messaging-container-email">
-            <h3>Hi Friend!</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Fusce et lacinia enim. Nulla tempor ut turpis id lobortis.
-                Cras turpis ligula, semper ut est sit amet, volutpat pharetra tortor.
-                Cras tincidunt quis urna in luctus. Morbi gravida vel leo sed mattis.
-                Aliquam ullamcorper ipsum vel dolor tempus, in tincidunt risus posuere.
-                Nam luctus tortor ut gravida egestas. Suspendisse tincidunt fringilla ligula.
-                In hac habitasse platea dictumst. Mauris consequat placerat porttitor.
-                Nullam rhoncus fringilla dolor vel fermentum.
-            </p>
-
-            <div class="email-controller">
-                <button class="reply"><span>REPLY</span></button>
-                <button class="delete"><span>DELETE</span></button>
+                <button id="inbox">Inbox</button>
+                <button>Sent</button>
+                <input type="text" placeholder="Search" id="search-bar">
             </div>
-        </div>
 
-        <div class="alerts-messaging-container-person">
-            <input type="checkbox" class="check-all">
-            <span class="not-selected"></span>
-            <span class="contact-name">Richard Channing</span>
-            <span class="email-name">Memorial Clinic</span>
-            <span class="date">12 April 2014</span>
+            <div class="alerts-messaging-container-person">
+                <input type="checkbox" class="check-all">
+                <span class="selected"></span>
+                <span class="contact-name">Jhon Snow</span>
+                <span class="email-name">Hi Friend!!</span>
+                <span class="date">12 April 2014</span>
+                <button><img src="/images/expand_more_FILL0_wght400_GRAD0_opsz48.png"></button>
+            </div>
 
-            <button><img src="/images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" /></button>
-        </div>
+            <div class="alerts-messaging-container-email">
+                <h3>Hi Friend!</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce et lacinia enim. Nulla tempor ut turpis id lobortis.
+                    Cras turpis ligula, semper ut est sit amet, volutpat pharetra tortor.
+                    Cras tincidunt quis urna in luctus. Morbi gravida vel leo sed mattis.
+                    Aliquam ullamcorper ipsum vel dolor tempus, in tincidunt risus posuere.
+                    Nam luctus tortor ut gravida egestas. Suspendisse tincidunt fringilla ligula.
+                    In hac habitasse platea dictumst. Mauris consequat placerat porttitor.
+                    Nullam rhoncus fringilla dolor vel fermentum.
+                </p>
 
-        <div class="alerts-messaging-container-person">
-            <input type="checkbox" class="check-all">
-            <span class="not-selected"></span>
-            <span class="contact-name">Elisabeth Bale</span>
-            <span class="email-name">From Connecticut</span>
-            <span class="date">21 June 2013</span>
-            <button><img src="/images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" /</button>
-        </div>
+                <div class="email-controller">
+                    <button class="reply"><span>REPLY</span></button>
+                    <button class="delete"><span>DELETE</span></button>
+                </div>
+            </div>
 
-        <div class="alerts-messaging-container-person">
-            <input type="checkbox" class="check-all">
-            <span class="not-selected"></span>
-            <span class="contact-name">Sarah Connor</span>
-            <span class="email-name">Cyberdyne Systems</span>
-            <span class="date">20 June 2013</span>
-            <button><img src="/images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" /</button>
-        </div>
+            <div class="alerts-messaging-container-person">
+                <input type="checkbox" class="check-all">
+                <span class="not-selected"></span>
+                <span class="contact-name">Richard Channing</span>
+                <span class="email-name">Memorial Clinic</span>
+                <span class="date">12 April 2014</span>
 
-        <div class="alerts-messaging-container-person">
-            <input type="checkbox" class="check-all">
-            <span class="not-selected"></span>
-            <span class="contact-name">Arturo Gonzalez</span>
-            <span class="email-name">Recordatorio Consulta</span>
-            <span class="date">20 June 2013</span>
-            <button><img src="/images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" /></button>
-        </div>
+                <button><img src="/images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" /></button>
+            </div>
 
-        <div class="alerts-messaging-container-previously">
-            <span><strong>5 Previously Messages</strong></span>
-        </div>
-        </div>
-    </section>
+            <div class="alerts-messaging-container-person">
+                <input type="checkbox" class="check-all">
+                <span class="not-selected"></span>
+                <span class="contact-name">Elisabeth Bale</span>
+                <span class="email-name">From Connecticut</span>
+                <span class="date">21 June 2013</span>
+                <button><img src="/images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" /</button>
+            </div>
 
-    <br>
-    <br>
+            <div class="alerts-messaging-container-person">
+                <input type="checkbox" class="check-all">
+                <span class="not-selected"></span>
+                <span class="contact-name">Sarah Connor</span>
+                <span class="email-name">Cyberdyne Systems</span>
+                <span class="date">20 June 2013</span>
+                <button><img src="/images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" /</button>
+            </div>
 
+            <div class="alerts-messaging-container-person">
+                <input type="checkbox" class="check-all">
+                <span class="not-selected"></span>
+                <span class="contact-name">Arturo Gonzalez</span>
+                <span class="email-name">Recordatorio Consulta</span>
+                <span class="date">20 June 2013</span>
+                <button><img src="/images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" /></button>
+            </div>
 
-
-    <br>
-
-    <section id="reminder-calendar">
+            <div id="alerts-messaging-container-previously">
+                <span><strong>5 Previously Messages</strong></span>
+            </div>
+        </section>
 
         <br>
+        <br>
 
-        <div class="divider-container">
-            <img src="/images/reminders-calendar.png" class="divider-container-images">
-            <span>REMINDER CALENDAR</span>
-            <span id="reminder-dates">
-                <span>DAILY / WEEKLY / MONTHLY</span>
-                <img src="/images/outline_grid_view_black_24dp.png" class="reminder-icons">
-                <img src="/images/view_list_FILL0_wght400_GRAD0_opsz48.png" class="reminder-icons">
-            </span>
-        </div>
+        <section id="reminder-calendar">
 
-        <div class="reminders">
-            <div class="first-reminder">
-                <div class="calendar-date-container">
-                    <span class="actual-day">TODAY</span>
-                    <span class="day-month">2 JULY / MONDAY</span>
-                </div>
+            <div class="divider-container">
+                <img src="/images/reminders-calendar.png" class="divider-container-images">
+                <span>REMINDER CALENDAR</span>
 
-                <br>
-
-                <div class="contact-container">
-                    <img src="/images/telephone.png">
-                    <div class="info">
-                        <span>Call Dr. Smith</span><br>
-                        <span>675 558 890</span>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="contact-container">
-                    <img src="/images/calendario.png">
-                    <div class="info">
-                        <span>Ocular Test</span><br>
-                        <span>Memorial Clinic Miami</span>
-                    </div>
-                    <button class="quit">x</button>
-                </div>
-
-                <div class="reminder-specification">
-                    <div class="reminder-date-info">
-                        <span>2 JULY 2012</span>
-                        <h4>/ 14:30</h4>
-                    </div>
-                    <p>Hi Friend!! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et lacinia enim. Nulla tempor ut
-                        turpis id lobortis.</p>
-
-                    <div class="reminder-buttons">
-                        <button><strong>CHANGE</strong></button>
-                        <button><strong>DONE</strong></button>
-                    </div>
-                </div>
+                <span id="reminder-dates">
+                    <span>DAILY / WEEKLY / MONTHLY</span>
+                    <img src="/images/outline_grid_view_black_24dp.png" class="reminder-icons">
+                    <img src="/images/view_list_FILL0_wght400_GRAD0_opsz48.png" class="reminder-icons">
+                </span>
             </div>
 
-            <div class="second-reminder">
-                <div class="actual-month">
-                    <button><img src="/images/chevron_left_FILL0_wght400_GRAD0_opsz48.png"></button>
-                    <span>JULY 2014</span>
-                    <button><img src="/images/chevron_right_FILL0_wght400_GRAD0_opsz48.png" ></nutton>
+            <br>
+
+            <div id="reminders">
+                <div class="first-reminder">
+                    <div id="calendar-date-container">
+                        <span>TODAY</span>
+                        <span>2 JULY / MONDAY</span>
+                    </div>
+
+
+                    <div class="contact-container">
+                        <img src="/images/telephone.png">
+                        <div class="info">
+                            <span>Call Dr. Smith</span><br>
+                            <span>675 558 890</span>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="contact-container">
+                        <img src="/images/calendario.png">
+                        <div class="info">
+                            <span>Ocular Test</span><br>
+                            <span>Memorial Clinic Miami</span>
+                        </div>
+                        <button id="close-remainder">x</button>
+                    </div>
+
+                    <div id="reminder-specification">
+                        <div class="reminder-date-info">
+                            <span>2 JULY 2012</span>
+                            <h4>/ 14:30</h4>
+                        </div>
+
+                        <p>Hi Friend!! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et lacinia enim.
+                            Nulla tempor ut
+                            turpis id lobortis.</p>
+
+                        <div class="reminder-buttons">
+                            <button id="change"><strong>CHANGE</strong></button>
+                            <button id="done"><strong>DONE</strong></button>
+                        </div>
+
+                    </div>
                 </div>
 
-                <br>
+                <div id="second-reminder">
+                    <div id="actual-month">
+                        <button><img src="/images/chevron_left_FILL0_wght400_GRAD0_opsz48.png"></button>
+                        <span>JULY 2014</span>
+                        <button><img src="/images/chevron_right_FILL0_wght400_GRAD0_opsz48.png"></nutton>
+                    </div>
 
-                    <ul class="weekdays">
+
+                    <ul id="weekdays">
                         <li>S</li>
                         <li>M</li>
                         <li>T</li>
@@ -309,13 +305,17 @@
                         <li>S</li>
                     </ul>
 
-                        <ul class="days">
+                    <ul id="days">
                         <li>1</li>
-                        <li><div class="active">2</div></li>
+                        <li>
+                            <div class="active">2</div>
+                        </li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                        <li><div class="active transparency">6</div></li>
+                        <li>
+                            <div class="active transparency">6</div>
+                        </li>
                         <li>7</li>
                         <li>8</li>
                         <li>9</li>
@@ -325,7 +325,9 @@
                         <li>13</li>
                         <li>14</li>
                         <li>15</li>
-                        <li><div class="active transparency">16</div></li>
+                        <li>
+                            <div class="active transparency">16</div>
+                        </li>
                         <li>17</li>
                         <li>18</li>
                         <li>19</li>
@@ -336,46 +338,50 @@
                         <li>24</li>
                         <li>25</li>
                         <li>26</li>
-                        <li><div class="active transparency">27</div></li>
+                        <li>
+                            <div class="active transparency">27</div>
+                        </li>
                         <li>28</li>
                         <li>29</li>
                         <li>30</li>
                         <li>31</li>
-                        </ul>
-            </div>
-        </div>
-    </section>
-
-    <br>
-    <br>
-
-
-
-    <br>
-    <br>
-
-    <section id="circle-of-care">
-
-        <div class="divider-container">
-            <img src="/images/ties2.png" class="divider-container-images">
-            <span>CIRCLE OF CARE</span>
-        </div>
-
-        <div class="circle-buttons-container">
-            <button>FIND</button>
-            <button>MY CIRCLE OF CARE</button>
-            <div>
-                <div class="pending-button"><div><span>1</span></div></div>
-            </div>
-            <button>PENDING</button>
-        </div>
-
-        <div class="circle-care">
-            <div class="air">
-                <div class="air-message">
-                    <span>For organize Drag & Drop in the groups</span>
+                    </ul>
                 </div>
             </div>
+        </section>
+
+        <br>
+        <br>
+
+
+
+        <br>
+        <br>
+
+        <section id="circle-of-care">
+
+            <div class="divider-container">
+                <img src="/images/ties2.png" class="divider-container-images">
+                <span>CIRCLE OF CARE</span>
+            </div>
+
+            <div id="circle-buttons-container">
+                <button>FIND</button>
+                <button id="button-circle-care">MY CIRCLE OF CARE</button>
+                <div>
+                    <div id="pending-button">
+                        <div><span>1</span></div>
+                    </div>
+                </div>
+                <button>PENDING</button>
+            </div>
+
+            <div id="circle-care">
+                <div id="air">
+                    <div id="air-message">
+                        <span>For organize Drag & Drop in the groups</span>
+                    </div>
+                </div>
                 <div class="person-card">
                     <span>Francis Williams Shakespeare</span>
                     <span>Graphic Designer</span>
@@ -407,14 +413,11 @@
                     <img src="/images/1601.png" class="person-card-img">
                     <button class="send-button">Send Message</button>
                 </div>
-        </div>
-    </section>
-</main>
+            </div>
+        </section>
+    </main>
 
-
-
-
-<script src="/script/main.js"></script>
+    <script src="/script/main.js"></script>
 </body>
 
 </html>
